@@ -51,3 +51,5 @@ set_global_assignment -name BDF_FILE BCD.bdf
 set_global_assignment -name BDF_FILE inversor.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE inversor.vwf
 set_global_assignment -name BDF_FILE somador.bdf
+set_global_assignment -name BDF_FILE complementador.bdf
+set_global_assignment -name BDF_FILE subtrator.bdf
