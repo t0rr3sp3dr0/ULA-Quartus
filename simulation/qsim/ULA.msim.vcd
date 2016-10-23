@@ -1,0 +1,120 @@
+$comment
+	File created using the following command:
+		vcd file ULA.msim.vcd -direction
+$end
+$date
+	Sun Oct 23 19:14:27 2016
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module inversor_vlg_vec_tst $end
+$var reg 4 ! in [3:0] $end
+$var wire 1 " out [3] $end
+$var wire 1 # out [2] $end
+$var wire 1 $ out [1] $end
+$var wire 1 % out [0] $end
+$var wire 1 & sampler $end
+$scope module i1 $end
+$var wire 1 ' gnd $end
+$var wire 1 ( vcc $end
+$var wire 1 ) unknown $end
+$var tri1 1 * devclrn $end
+$var tri1 1 + devpor $end
+$var tri1 1 , devoe $end
+$var wire 1 - in~combout [3] $end
+$var wire 1 . in~combout [2] $end
+$var wire 1 / in~combout [1] $end
+$var wire 1 0 in~combout [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+1%
+1$
+1#
+1"
+x&
+0'
+1(
+x)
+1*
+1+
+1,
+00
+0/
+0.
+0-
+$end
+#100000
+b1 !
+10
+0&
+0%
+#200000
+b11 !
+b10 !
+00
+1/
+1&
+1%
+0$
+#300000
+b11 !
+10
+0&
+0%
+#400000
+b111 !
+b101 !
+b100 !
+00
+0/
+1.
+1&
+1%
+1$
+0#
+#500000
+b101 !
+10
+0&
+0%
+#600000
+b111 !
+b110 !
+00
+1/
+1&
+1%
+0$
+#700000
+b111 !
+10
+0&
+0%
+#800000
+b1111 !
+b1011 !
+b1001 !
+b1000 !
+00
+0/
+0.
+1-
+1&
+1%
+1$
+1#
+0"
+#900000
+b1001 !
+10
+0&
+0%
+#1000000

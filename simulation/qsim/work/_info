@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/CIN/phts/Desktop/ULA-Quartus/simulation/qsim
+vinversor
+Z1 IV=S[goVfh3YoE50OB5`Z00
+Z2 VMEdPGkiKF1KH7U39z[R=40
+Z3 d/home/CIN/phts/Desktop/ULA-Quartus/simulation/qsim
+Z4 w1477260866
+Z5 8ULA.vo
+Z6 FULA.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+!i10b 1
+Z9 !s100 7N<XhLXFWLEoJA]1Cobf73
+!s85 0
+Z10 !s108 1477260867.386983
+Z11 !s107 ULA.vo|
+Z12 !s90 -work|work|ULA.vo|
+!s101 -O0
+vinversor_vlg_check_tst
+!i10b 1
+!s100 Z@OkFWAjQm]SnCD7DNih13
+IIE4]nEPZkhEF;nWjd6[bd0
+VC6@2e]K0fPHch:12]59=30
+R3
+Z13 w1477260862
+Z14 8inversor.vwf.vt
+Z15 Finversor.vwf.vt
+L0 57
+R7
+r1
+!s85 0
+31
+Z16 !s108 1477260867.538083
+Z17 !s107 inversor.vwf.vt|
+Z18 !s90 -work|work|inversor.vwf.vt|
+!s101 -O0
+R8
+vinversor_vlg_sample_tst
+!i10b 1
+!s100 X:ndiYBW=3>IdD<22DY;a3
+IV@`eC[Ue6gn``X<Ui@Q`S2
+Vf<YSAQd=8c6OmiRY69<aJ0
+R3
+R13
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+vinversor_vlg_vec_tst
+!i10b 1
+!s100 @0K2eDY9Y=[fC=QbNLKVB3
+Ih8b>m7K4k1:D:Me^PIm=B2
+V_9]bT?eC=fIW[L`d]HWEX0
+R3
+R13
+R14
+R15
+L0 216
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
