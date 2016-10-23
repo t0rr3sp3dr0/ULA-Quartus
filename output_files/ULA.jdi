@@ -1,8 +1,8 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="e2bf8d4130e28a05a1b4"/>
+    <hash md5_digest_80b="dfb524224be006611c70"/>
   </project>
   <file_info>
-    <file device="5M40ZM64C4" path="ULA.sof" usercode="0xFFFFFFFF"/>
+    <file device="5M40ZE64C4" path="ULA.sof" usercode="0xFFFFFFFF"/>
   </file_info>
 </sld_project_info>
