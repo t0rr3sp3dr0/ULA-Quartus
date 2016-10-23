@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "MAX V"
 set_global_assignment -name DEVICE auto
-set_global_assignment -name TOP_LEVEL_ENTITY somador
+set_global_assignment -name TOP_LEVEL_ENTITY BCD
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:52:46  OUTUBRO 23, 2016"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
@@ -47,23 +47,9 @@ set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
 set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "/home/CIN/phts/Desktop/ULA-Quartus/simulation/qsim/" -section_id eda_simulation
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
-set_global_assignment -name BDF_FILE somador.bdf
 set_global_assignment -name BDF_FILE BCD.bdf
 set_global_assignment -name BDF_FILE inversor.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE inversor.vwf
-<<<<<<< HEAD
-set_global_assignment -name BDF_FILE ULA.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE ULA.vwf
-=======
-<<<<<<< HEAD
 set_global_assignment -name BDF_FILE somador.bdf
 set_global_assignment -name BDF_FILE complementador.bdf
 set_global_assignment -name BDF_FILE subtrator.bdf
-=======
-<<<<<<< HEAD
-set_global_assignment -name BDF_FILE ULA.bdf
-=======
-set_global_assignment -name BDF_FILE somador.bdf
->>>>>>> ebeadd74edc349e45bd6b0ba0a194b0a684eb161
->>>>>>> 320ff47f617899f9f2bee0dbcc5033b27d0d6a71
->>>>>>> b58a74783032f94b5b6c04499f2f34508fa16880
