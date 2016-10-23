@@ -1,6 +1,6 @@
 TimeQuest Timing Analyzer report for ULA
-Sun Oct 23 18:04:09 2016
-Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Sun Oct 23 19:29:02 2016
+Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
 ---------------------
@@ -111,28 +111,32 @@ No paths to report.
 No paths to report.
 
 
-+----------------------------------------------------+
-; Propagation Delay                                  ;
-+------------+-------------+-------+----+----+-------+
-; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
-+------------+-------------+-------+----+----+-------+
-; in[0]      ; out[0]      ; 7.516 ;    ;    ; 7.516 ;
-; in[1]      ; out[1]      ; 8.641 ;    ;    ; 8.641 ;
-; in[2]      ; out[2]      ; 7.114 ;    ;    ; 7.114 ;
-; in[3]      ; out[3]      ; 7.078 ;    ;    ; 7.078 ;
-+------------+-------------+-------+----+----+-------+
++------------------------------------------------------+
+; Propagation Delay                                    ;
++------------+-------------+--------+----+----+--------+
+; Input Port ; Output Port ; RR     ; RF ; FR ; FF     ;
++------------+-------------+--------+----+----+--------+
+; carry_in   ; carry_out   ; 10.711 ;    ;    ; 10.711 ;
+; carry_in   ; output      ; 11.563 ;    ;    ; 11.563 ;
+; input_A    ; carry_out   ; 10.060 ;    ;    ; 10.060 ;
+; input_A    ; output      ; 10.904 ;    ;    ; 10.904 ;
+; input_B    ; carry_out   ; 11.055 ;    ;    ; 11.055 ;
+; input_B    ; output      ; 11.902 ;    ;    ; 11.902 ;
++------------+-------------+--------+----+----+--------+
 
 
-+----------------------------------------------------+
-; Minimum Propagation Delay                          ;
-+------------+-------------+-------+----+----+-------+
-; Input Port ; Output Port ; RR    ; RF ; FR ; FF    ;
-+------------+-------------+-------+----+----+-------+
-; in[0]      ; out[0]      ; 7.516 ;    ;    ; 7.516 ;
-; in[1]      ; out[1]      ; 8.641 ;    ;    ; 8.641 ;
-; in[2]      ; out[2]      ; 7.114 ;    ;    ; 7.114 ;
-; in[3]      ; out[3]      ; 7.078 ;    ;    ; 7.078 ;
-+------------+-------------+-------+----+----+-------+
++------------------------------------------------------+
+; Minimum Propagation Delay                            ;
++------------+-------------+--------+----+----+--------+
+; Input Port ; Output Port ; RR     ; RF ; FR ; FF     ;
++------------+-------------+--------+----+----+--------+
+; carry_in   ; carry_out   ; 10.711 ;    ;    ; 10.711 ;
+; carry_in   ; output      ; 11.563 ;    ;    ; 11.563 ;
+; input_A    ; carry_out   ; 10.060 ;    ;    ; 10.060 ;
+; input_A    ; output      ; 10.904 ;    ;    ; 10.904 ;
+; input_B    ; carry_out   ; 11.055 ;    ;    ; 11.055 ;
+; input_B    ; output      ; 11.902 ;    ;    ; 11.902 ;
++------------+-------------+--------+----+----+--------+
 
 
 -------------------
@@ -160,10 +164,10 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 4     ; 4    ;
-; Unconstrained Input Port Paths  ; 4     ; 4    ;
-; Unconstrained Output Ports      ; 4     ; 4    ;
-; Unconstrained Output Port Paths ; 4     ; 4    ;
+; Unconstrained Input Ports       ; 3     ; 3    ;
+; Unconstrained Input Port Paths  ; 6     ; 6    ;
+; Unconstrained Output Ports      ; 2     ; 2    ;
+; Unconstrained Output Port Paths ; 6     ; 6    ;
 +---------------------------------+-------+------+
 
 
@@ -171,9 +175,9 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; TimeQuest Timing Analyzer Messages ;
 +------------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+Info: Running Quartus II 32-bit TimeQuest Timing Analyzer
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Sun Oct 23 18:04:08 2016
+    Info: Processing started: Sun Oct 23 19:29:02 2016
 Info: Command: quartus_sta ULA -c ULA
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -194,10 +198,10 @@ Info (332140): No Minimum Pulse Width paths to report
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 550 megabytes
-    Info: Processing ended: Sun Oct 23 18:04:09 2016
-    Info: Elapsed time: 00:00:01
+Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 322 megabytes
+    Info: Processing ended: Sun Oct 23 19:29:02 2016
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
 

@@ -1,6 +1,6 @@
 Fitter report for ULA
-Sun Oct 23 18:04:00 2016
-Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Sun Oct 23 19:28:55 2016
+Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
 ---------------------
@@ -21,9 +21,13 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
  13. Delay Chain Summary
  14. Non-Global High Fan-Out Signals
  15. Routing Usage Summary
- 16. Fitter Device Options
- 17. Fitter Messages
- 18. Fitter Suppressed Messages
+ 16. LAB Logic Elements
+ 17. LAB Signals Sourced
+ 18. LAB Signals Sourced Out
+ 19. LAB Distinct Inputs
+ 20. Fitter Device Options
+ 21. Fitter Messages
+ 22. Fitter Suppressed Messages
 
 
 
@@ -49,15 +53,15 @@ applicable agreement for further details.
 +------------------------------------------------------------------------+
 ; Fitter Summary                                                         ;
 +---------------------------+--------------------------------------------+
-; Fitter Status             ; Successful - Sun Oct 23 18:04:00 2016      ;
-; Quartus II 64-Bit Version ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Fitter Status             ; Successful - Sun Oct 23 19:28:55 2016      ;
+; Quartus II 32-bit Version ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name             ; ULA                                        ;
-; Top-level Entity Name     ; inversor                                   ;
+; Top-level Entity Name     ; BCD                                        ;
 ; Family                    ; MAX V                                      ;
 ; Device                    ; 5M40ZM64C4                                 ;
 ; Timing Models             ; Final                                      ;
-; Total logic elements      ; 0 / 40 ( 0 % )                             ;
-; Total pins                ; 8 / 30 ( 27 % )                            ;
+; Total logic elements      ; 2 / 40 ( 5 % )                             ;
+; Total pins                ; 5 / 30 ( 17 % )                            ;
 ; Total virtual pins        ; 0                                          ;
 ; UFM blocks                ; 0 / 1 ( 0 % )                              ;
 +---------------------------+--------------------------------------------+
@@ -123,7 +127,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in /home/CIN/phts/Desktop/ULA-Quartus/output_files/ULA.pin.
+The pin-out file can be found in /home/CIN/lvrma/ULA-Quartus/output_files/ULA.pin.
 
 
 +---------------------------------------------------------------+
@@ -131,20 +135,20 @@ The pin-out file can be found in /home/CIN/phts/Desktop/ULA-Quartus/output_files
 +---------------------------------------------+-----------------+
 ; Resource                                    ; Usage           ;
 +---------------------------------------------+-----------------+
-; Total logic elements                        ; 0 / 40 ( 0 % )  ;
-;     -- Combinational with no register       ; 0               ;
+; Total logic elements                        ; 2 / 40 ( 5 % )  ;
+;     -- Combinational with no register       ; 2               ;
 ;     -- Register only                        ; 0               ;
 ;     -- Combinational with a register        ; 0               ;
 ;                                             ;                 ;
 ; Logic element usage by number of LUT inputs ;                 ;
 ;     -- 4 input functions                    ; 0               ;
-;     -- 3 input functions                    ; 0               ;
+;     -- 3 input functions                    ; 2               ;
 ;     -- 2 input functions                    ; 0               ;
 ;     -- 1 input functions                    ; 0               ;
 ;     -- 0 input functions                    ; 0               ;
 ;                                             ;                 ;
 ; Logic elements by mode                      ;                 ;
-;     -- normal mode                          ; 0               ;
+;     -- normal mode                          ; 2               ;
 ;     -- arithmetic mode                      ; 0               ;
 ;     -- qfbk mode                            ; 0               ;
 ;     -- register cascade mode                ; 0               ;
@@ -152,11 +156,11 @@ The pin-out file can be found in /home/CIN/phts/Desktop/ULA-Quartus/output_files
 ;     -- asynchronous clear/load mode         ; 0               ;
 ;                                             ;                 ;
 ; Total registers                             ; 0 / 40 ( 0 % )  ;
-; Total LABs                                  ; 0 / 4 ( 0 % )   ;
+; Total LABs                                  ; 1 / 4 ( 25 % )  ;
 ; Logic elements in carry chains              ; 0               ;
 ; Virtual pins                                ; 0               ;
-; I/O pins                                    ; 8 / 30 ( 27 % ) ;
-;     -- Clock pins                           ; 0 / 2 ( 0 % )   ;
+; I/O pins                                    ; 5 / 30 ( 17 % ) ;
+;     -- Clock pins                           ; 1 / 2 ( 50 % )  ;
 ;                                             ;                 ;
 ; Global signals                              ; 0               ;
 ; UFM blocks                                  ; 0 / 1 ( 0 % )   ;
@@ -164,35 +168,32 @@ The pin-out file can be found in /home/CIN/phts/Desktop/ULA-Quartus/output_files
 ; JTAGs                                       ; 0 / 1 ( 0 % )   ;
 ; Average interconnect usage (total/H/V)      ; 0% / 0% / 0%    ;
 ; Peak interconnect usage (total/H/V)         ; 0% / 0% / 0%    ;
-; Maximum fan-out                             ; 1               ;
-; Highest non-global fan-out                  ; 1               ;
-; Total fan-out                               ; 4               ;
-; Average fan-out                             ; 0.50            ;
+; Maximum fan-out                             ; 2               ;
+; Highest non-global fan-out                  ; 2               ;
+; Total fan-out                               ; 8               ;
+; Average fan-out                             ; 1.14            ;
 +---------------------------------------------+-----------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Input Pins                                                                                                                                                                                                   ;
-+-------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+-----------------+----------+--------------+--------------+----------------------+
-; Name  ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Location assigned by ;
-+-------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+-----------------+----------+--------------+--------------+----------------------+
-; in[0] ; A8    ; 2        ; 8            ; 4            ; 2           ; 1                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Fitter               ;
-; in[1] ; G7    ; 1        ; 6            ; 0            ; 1           ; 1                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Fitter               ;
-; in[2] ; C8    ; 2        ; 8            ; 3            ; 0           ; 1                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Fitter               ;
-; in[3] ; B7    ; 2        ; 8            ; 3            ; 1           ; 1                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Fitter               ;
-+-------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+-----------------+----------+--------------+--------------+----------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Input Pins                                                                                                                                                                                                      ;
++----------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+-----------------+----------+--------------+--------------+----------------------+
+; Name     ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Location assigned by ;
++----------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+-----------------+----------+--------------+--------------+----------------------+
+; carry_in ; F6    ; 1        ; 6            ; 0            ; 3           ; 2                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Fitter               ;
+; input_A  ; D8    ; 2        ; 8            ; 2            ; 0           ; 2                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Fitter               ;
+; input_B  ; G8    ; 1        ; 7            ; 0            ; 2           ; 2                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Fitter               ;
++----------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+-----------------+----------+--------------+--------------+----------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Output Pins                                                                                                                                                                                                                                                                                                              ;
-+--------+-------+----------+--------------+--------------+-------------+-----------------+----------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+------------------------+----------------------+-------+----------------------+---------------------+
-; Name   ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Output Register ; Slow Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Fast Output Connection ; Location assigned by ; Load  ; Output Enable Source ; Output Enable Group ;
-+--------+-------+----------+--------------+--------------+-------------+-----------------+----------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+------------------------+----------------------+-------+----------------------+---------------------+
-; out[0] ; A6    ; 2        ; 5            ; 5            ; 0           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
-; out[1] ; A2    ; 2        ; 2            ; 5            ; 0           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
-; out[2] ; G8    ; 1        ; 7            ; 0            ; 2           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
-; out[3] ; H8    ; 1        ; 7            ; 0            ; 1           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
-+--------+-------+----------+--------------+--------------+-------------+-----------------+----------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+------------------------+----------------------+-------+----------------------+---------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Output Pins                                                                                                                                                                                                                                                                                                                 ;
++-----------+-------+----------+--------------+--------------+-------------+-----------------+----------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+------------------------+----------------------+-------+----------------------+---------------------+
+; Name      ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Output Register ; Slow Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Fast Output Connection ; Location assigned by ; Load  ; Output Enable Source ; Output Enable Group ;
++-----------+-------+----------+--------------+--------------+-------------+-----------------+----------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+------------------------+----------------------+-------+----------------------+---------------------+
+; carry_out ; A4    ; 2        ; 3            ; 5            ; 0           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
+; output    ; F8    ; 2        ; 8            ; 1            ; 3           ; no              ; no             ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 16mA             ; no                     ; Fitter               ; 10 pF ; -                    ; -                   ;
++-----------+-------+----------+--------------+--------------+-------------+-----------------+----------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+------------------------+----------------------+-------+----------------------+---------------------+
 
 
 +-----------------------------------------------------------+
@@ -200,8 +201,8 @@ The pin-out file can be found in /home/CIN/phts/Desktop/ULA-Quartus/output_files
 +----------+-----------------+---------------+--------------+
 ; I/O Bank ; Usage           ; VCCIO Voltage ; VREF Voltage ;
 +----------+-----------------+---------------+--------------+
-; 1        ; 3 / 17 ( 18 % ) ; 3.3V          ; --           ;
-; 2        ; 5 / 13 ( 38 % ) ; 3.3V          ; --           ;
+; 1        ; 2 / 17 ( 12 % ) ; 3.3V          ; --           ;
+; 2        ; 3 / 13 ( 23 % ) ; 3.3V          ; --           ;
 +----------+-----------------+---------------+--------------+
 
 
@@ -211,20 +212,20 @@ The pin-out file can be found in /home/CIN/phts/Desktop/ULA-Quartus/output_files
 ; Location ; Pad Number ; I/O Bank ; Pin Name/Usage ; Dir.   ; I/O Standard ; Voltage ; I/O Type   ; User Assignment ; Bus Hold ; Weak Pull Up ;
 +----------+------------+----------+----------------+--------+--------------+---------+------------+-----------------+----------+--------------+
 ; A1       ; 1          ; 1        ; GND*           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; A2       ; 80         ; 2        ; out[1]         ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; A2       ; 80         ; 2        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A3       ; 78         ; 2        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; A4       ; 76         ; 2        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; A4       ; 76         ; 2        ; carry_out      ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; A5       ;            ;          ; GND            ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; A6       ; 69         ; 2        ; out[0]         ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; A6       ; 69         ; 2        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; A7       ;            ;          ; GND            ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; A8       ; 58         ; 2        ; in[0]          ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; A8       ; 58         ; 2        ; GND*           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; B1       ; 2          ; 1        ; GND*           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; B2       ; 82         ; 2        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; B3       ;            ;          ; GND            ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; B4       ;            ;          ; GND            ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; B5       ;            ;          ; GND            ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; B6       ;            ;          ; GND            ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; B7       ; 54         ; 2        ; in[3]          ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; B7       ; 54         ; 2        ; GND*           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; B8       ; 57         ; 2        ; GND*           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; C1       ;            ;          ; GND            ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; C2       ; 3          ; 1        ; GND*           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -233,7 +234,7 @@ The pin-out file can be found in /home/CIN/phts/Desktop/ULA-Quartus/output_files
 ; C5       ; 70         ; 2        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C6       ; 67         ; 2        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C7       ;            ;          ; GND            ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; C8       ; 55         ; 2        ; in[2]          ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; C8       ; 55         ; 2        ; GND*           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; D1       ;            ;          ; GND            ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; D2       ; 5          ; 1        ; GND*           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; D3       ;            ; 1        ; VCCIO1         ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
@@ -241,7 +242,7 @@ The pin-out file can be found in /home/CIN/phts/Desktop/ULA-Quartus/output_files
 ; D5       ;            ; 2        ; VCCIO2         ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; D6       ;            ;          ; VCCINT         ; power  ;              ; 1.8V    ; --         ;                 ; --       ; --           ;
 ; D7       ;            ;          ; GND            ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; D8       ; 50         ; 2        ; GND*           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; D8       ; 50         ; 2        ; input_A        ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; E1       ;            ;          ; GND            ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; E2       ; 8          ; 1        ; GND*           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; E3       ;            ; 1        ; VCCIO1         ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
@@ -255,17 +256,17 @@ The pin-out file can be found in /home/CIN/phts/Desktop/ULA-Quartus/output_files
 ; F3       ; 14         ; 1        ; GND*           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; F4       ;            ;          ; GND            ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; F5       ; 33         ; 1        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; F6       ; 35         ; 1        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; F6       ; 35         ; 1        ; carry_in       ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; F7       ;            ;          ; GND            ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; F8       ; 43         ; 2        ; GND*           ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; F8       ; 43         ; 2        ; output         ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; G1       ; 16         ; 1        ; #TMS           ; input  ;              ;         ; --         ;                 ; --       ; --           ;
 ; G2       ;            ;          ; GND            ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; G3       ; 19         ; 1        ; #TDO           ; output ;              ;         ; --         ;                 ; --       ; --           ;
 ; G4       ;            ;          ; GND            ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; G5       ;            ;          ; GND            ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; G6       ;            ;          ; GND            ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; G7       ; 37         ; 1        ; in[1]          ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; G8       ; 39         ; 1        ; out[2]         ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; G7       ; 37         ; 1        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; G8       ; 39         ; 1        ; input_B        ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; H1       ; 17         ; 1        ; #TDI           ; input  ;              ;         ; --         ;                 ; --       ; --           ;
 ; H2       ; 18         ; 1        ; #TCK           ; input  ;              ;         ; --         ;                 ; --       ; --           ;
 ; H3       ; 20         ; 1        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -273,7 +274,7 @@ The pin-out file can be found in /home/CIN/phts/Desktop/ULA-Quartus/output_files
 ; H5       ; 24         ; 1        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; H6       ; 26         ; 1        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; H7       ; 36         ; 1        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; H8       ; 40         ; 1        ; out[3]         ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; H8       ; 40         ; 1        ; GND*           ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 +----------+------------+----------+----------------+--------+--------------+---------+------------+-----------------+----------+--------------+
 Note: Pin directions (input, output or bidir) are based on device operating in user mode.
 
@@ -302,37 +303,35 @@ Note: User assignments will override these defaults. The user specified values a
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
-; |inversor                  ; 0 (0)       ; 0            ; 0          ; 8    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |inversor           ; work         ;
+; |BCD                       ; 2 (2)       ; 0            ; 0          ; 5    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |BCD                ; work         ;
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-----------------------------------+
-; Delay Chain Summary               ;
-+--------+----------+---------------+
-; Name   ; Pin Type ; Pad to Core 0 ;
-+--------+----------+---------------+
-; out[3] ; Output   ; --            ;
-; out[2] ; Output   ; --            ;
-; out[1] ; Output   ; --            ;
-; out[0] ; Output   ; --            ;
-; in[3]  ; Input    ; (1)           ;
-; in[2]  ; Input    ; (1)           ;
-; in[1]  ; Input    ; (1)           ;
-; in[0]  ; Input    ; (1)           ;
-+--------+----------+---------------+
++--------------------------------------+
+; Delay Chain Summary                  ;
++-----------+----------+---------------+
+; Name      ; Pin Type ; Pad to Core 0 ;
++-----------+----------+---------------+
+; carry_out ; Output   ; --            ;
+; output    ; Output   ; --            ;
+; input_B   ; Input    ; (1)           ;
+; input_A   ; Input    ; (1)           ;
+; carry_in  ; Input    ; (1)           ;
++-----------+----------+---------------+
 
 
 +---------------------------------+
 ; Non-Global High Fan-Out Signals ;
-+-------+-------------------------+
-; Name  ; Fan-Out                 ;
-+-------+-------------------------+
-; in[0] ; 1                       ;
-; in[1] ; 1                       ;
-; in[2] ; 1                       ;
-; in[3] ; 1                       ;
-+-------+-------------------------+
++----------+----------------------+
+; Name     ; Fan-Out              ;
++----------+----------------------+
+; carry_in ; 2                    ;
+; input_A  ; 2                    ;
+; input_B  ; 2                    ;
+; inst5~0  ; 1                    ;
+; inst1~0  ; 1                    ;
++----------+----------------------+
 
 
 +-------------------------------------------+
@@ -340,14 +339,66 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-------------------+
 ; Routing Resource Type ; Usage             ;
 +-----------------------+-------------------+
-; C4s                   ; 5 / 784 ( < 1 % ) ;
+; C4s                   ; 4 / 784 ( < 1 % ) ;
 ; Direct links          ; 0 / 888 ( 0 % )   ;
 ; Global clocks         ; 0 / 4 ( 0 % )     ;
 ; LAB clocks            ; 0 / 32 ( 0 % )    ;
 ; LUT chains            ; 0 / 216 ( 0 % )   ;
-; Local interconnects   ; 4 / 888 ( < 1 % ) ;
-; R4s                   ; 2 / 704 ( < 1 % ) ;
+; Local interconnects   ; 5 / 888 ( < 1 % ) ;
+; R4s                   ; 5 / 704 ( < 1 % ) ;
 +-----------------------+-------------------+
+
+
++--------------------------------------------------------------------------+
+; LAB Logic Elements                                                       ;
++--------------------------------------------+-----------------------------+
+; Number of Logic Elements  (Average = 2.00) ; Number of LABs  (Total = 1) ;
++--------------------------------------------+-----------------------------+
+; 1                                          ; 0                           ;
+; 2                                          ; 1                           ;
+; 3                                          ; 0                           ;
+; 4                                          ; 0                           ;
+; 5                                          ; 0                           ;
+; 6                                          ; 0                           ;
+; 7                                          ; 0                           ;
+; 8                                          ; 0                           ;
+; 9                                          ; 0                           ;
+; 10                                         ; 0                           ;
++--------------------------------------------+-----------------------------+
+
+
++---------------------------------------------------------------------------+
+; LAB Signals Sourced                                                       ;
++---------------------------------------------+-----------------------------+
+; Number of Signals Sourced  (Average = 2.00) ; Number of LABs  (Total = 1) ;
++---------------------------------------------+-----------------------------+
+; 0                                           ; 0                           ;
+; 1                                           ; 0                           ;
+; 2                                           ; 1                           ;
++---------------------------------------------+-----------------------------+
+
+
++-------------------------------------------------------------------------------+
+; LAB Signals Sourced Out                                                       ;
++-------------------------------------------------+-----------------------------+
+; Number of Signals Sourced Out  (Average = 2.00) ; Number of LABs  (Total = 1) ;
++-------------------------------------------------+-----------------------------+
+; 0                                               ; 0                           ;
+; 1                                               ; 0                           ;
+; 2                                               ; 1                           ;
++-------------------------------------------------+-----------------------------+
+
+
++---------------------------------------------------------------------------+
+; LAB Distinct Inputs                                                       ;
++---------------------------------------------+-----------------------------+
+; Number of Distinct Inputs  (Average = 3.00) ; Number of LABs  (Total = 1) ;
++---------------------------------------------+-----------------------------+
+; 0                                           ; 0                           ;
+; 1                                           ; 0                           ;
+; 2                                           ; 0                           ;
+; 3                                           ; 1                           ;
++---------------------------------------------+-----------------------------+
 
 
 +-------------------------------------------------------------------------+
@@ -374,15 +425,12 @@ Info (171003): Fitter is performing an Auto Fit compilation, which may decrease 
 Warning (292013): Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature.
 Info (176444): Device migration not selected. If you intend to use device migration later, you may need to change the pin assignments as they may be incompatible with other devices
     Info (176445): Device 5M80ZM64C4 is compatible
-Critical Warning (169085): No exact pin location assignment(s) for 8 pins of 8 total pins
-    Info (169086): Pin out[3] not assigned to an exact location on the device
-    Info (169086): Pin out[2] not assigned to an exact location on the device
-    Info (169086): Pin out[1] not assigned to an exact location on the device
-    Info (169086): Pin out[0] not assigned to an exact location on the device
-    Info (169086): Pin in[3] not assigned to an exact location on the device
-    Info (169086): Pin in[2] not assigned to an exact location on the device
-    Info (169086): Pin in[1] not assigned to an exact location on the device
-    Info (169086): Pin in[0] not assigned to an exact location on the device
+Critical Warning (169085): No exact pin location assignment(s) for 5 pins of 5 total pins
+    Info (169086): Pin carry_out not assigned to an exact location on the device
+    Info (169086): Pin output not assigned to an exact location on the device
+    Info (169086): Pin input_B not assigned to an exact location on the device
+    Info (169086): Pin input_A not assigned to an exact location on the device
+    Info (169086): Pin carry_in not assigned to an exact location on the device
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'ULA.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
 Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
@@ -398,7 +446,7 @@ Info (186468): Started processing fast register assignments
 Info (186469): Finished processing fast register assignments
 Info (176235): Finished register packing
 Info (176214): Statistics of I/O pins that need to be placed that use the same VCCIO and VREF, before I/O pin placement
-    Info (176211): Number of I/O pins in group: 8 (unused VREF, 3.3V VCCIO, 4 input, 4 output, 0 bidirectional)
+    Info (176211): Number of I/O pins in group: 5 (unused VREF, 3.3V VCCIO, 3 input, 2 output, 0 bidirectional)
         Info (176212): I/O standards used: 3.3-V LVTTL.
 Info (176215): I/O bank details before I/O pin placement
     Info (176214): Statistics of I/O banks
@@ -420,17 +468,17 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
 Info (11888): Total time spent on timing analysis during the Fitter is 0.12 seconds.
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
-Info (144001): Generated suppressed messages file /home/CIN/phts/Desktop/ULA-Quartus/output_files/ULA.fit.smsg
-Info: Quartus II 64-Bit Fitter was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 710 megabytes
-    Info: Processing ended: Sun Oct 23 18:04:00 2016
-    Info: Elapsed time: 00:00:02
+Info (144001): Generated suppressed messages file /home/CIN/lvrma/ULA-Quartus/output_files/ULA.fit.smsg
+Info: Quartus II 32-bit Fitter was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 442 megabytes
+    Info: Processing ended: Sun Oct 23 19:28:55 2016
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in /home/CIN/phts/Desktop/ULA-Quartus/output_files/ULA.fit.smsg.
+The suppressed messages can be found in /home/CIN/lvrma/ULA-Quartus/output_files/ULA.fit.smsg.
 
 
