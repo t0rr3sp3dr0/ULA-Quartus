@@ -50,6 +50,14 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_s
 set_global_assignment -name BDF_FILE BCD.bdf
 set_global_assignment -name BDF_FILE inversor.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE inversor.vwf
+<<<<<<< HEAD
 set_global_assignment -name BDF_FILE somador.bdf
 set_global_assignment -name BDF_FILE complementador.bdf
 set_global_assignment -name BDF_FILE subtrator.bdf
+=======
+<<<<<<< HEAD
+set_global_assignment -name BDF_FILE ULA.bdf
+=======
+set_global_assignment -name BDF_FILE somador.bdf
+>>>>>>> ebeadd74edc349e45bd6b0ba0a194b0a684eb161
+>>>>>>> 320ff47f617899f9f2bee0dbcc5033b27d0d6a71
