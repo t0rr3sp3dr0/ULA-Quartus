@@ -1,0 +1,79 @@
+# do ULA.do 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module inversor
+# 
+# Top level modules:
+# 	inversor
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module inversor_vlg_sample_tst
+# -- Compiling module inversor_vlg_check_tst
+# -- Compiling module inversor_vlg_vec_tst
+# 
+# Top level modules:
+# 	inversor_vlg_vec_tst
+# vsim -L maxv_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -voptargs=\"+acc\" -t 1ps -novopt work.inversor_vlg_vec_tst 
+# Loading work.inversor_vlg_vec_tst
+# Loading work.inversor
+# Loading maxv_ver.maxv_io
+# Loading work.inversor_vlg_sample_tst
+# Loading work.inversor_vlg_check_tst
+# ERROR! Vector Mismatch for output port out[0] :: @time = 100000.000 ps
+#      Expected value = 0000
+#      Real value = 1111
+# ERROR! Vector Mismatch for output port out[1] :: @time = 100000.000 ps
+#      Expected value = 0000
+#      Real value = 1111
+# ERROR! Vector Mismatch for output port out[2] :: @time = 100000.000 ps
+#      Expected value = 0000
+#      Real value = 1111
+# ERROR! Vector Mismatch for output port out[3] :: @time = 100000.000 ps
+#      Expected value = 0000
+#      Real value = 1111
+# ERROR! Vector Mismatch for output port out[0] :: @time = 200000.000 ps
+#      Expected value = 0001
+#      Real value = 1110
+# ERROR! Vector Mismatch for output port out[0] :: @time = 300000.000 ps
+#      Expected value = 0010
+#      Real value = 1101
+# ERROR! Vector Mismatch for output port out[1] :: @time = 300000.000 ps
+#      Expected value = 0010
+#      Real value = 1101
+# ERROR! Vector Mismatch for output port out[0] :: @time = 400000.000 ps
+#      Expected value = 0011
+#      Real value = 1100
+# ERROR! Vector Mismatch for output port out[0] :: @time = 500000.000 ps
+#      Expected value = 0100
+#      Real value = 1011
+# ERROR! Vector Mismatch for output port out[1] :: @time = 500000.000 ps
+#      Expected value = 0100
+#      Real value = 1011
+# ERROR! Vector Mismatch for output port out[2] :: @time = 500000.000 ps
+#      Expected value = 0100
+#      Real value = 1011
+# ERROR! Vector Mismatch for output port out[0] :: @time = 600000.000 ps
+#      Expected value = 0101
+#      Real value = 1010
+# ERROR! Vector Mismatch for output port out[0] :: @time = 700000.000 ps
+#      Expected value = 0110
+#      Real value = 1001
+# ERROR! Vector Mismatch for output port out[1] :: @time = 700000.000 ps
+#      Expected value = 0110
+#      Real value = 1001
+# ERROR! Vector Mismatch for output port out[0] :: @time = 800000.000 ps
+#      Expected value = 0111
+#      Real value = 1000
+# ERROR! Vector Mismatch for output port out[0] :: @time = 900000.000 ps
+#      Expected value = 1000
+#      Real value = 0111
+# ERROR! Vector Mismatch for output port out[1] :: @time = 900000.000 ps
+#      Expected value = 1000
+#      Real value = 0111
+# ERROR! Vector Mismatch for output port out[2] :: @time = 900000.000 ps
+#      Expected value = 1000
+#      Real value = 0111
+# ERROR! Vector Mismatch for output port out[3] :: @time = 900000.000 ps
+#      Expected value = 1000
+#      Real value = 0111
+#          19 mismatched vectors : Simulation failed !
+# ** Note: $finish    : inversor.vwf.vt(212)
+#    Time: 1 us  Iteration: 0  Instance: /inversor_vlg_vec_tst/tb_out

@@ -1,0 +1,11 @@
+|inversor
+out[0] <= inst[0].DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= inst[1].DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= inst[2].DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= inst[3].DB_MAX_OUTPUT_PORT_TYPE
+in[0] => inst[0].IN0
+in[1] => inst[1].IN0
+in[2] => inst[2].IN0
+in[3] => inst[3].IN0
+
+
