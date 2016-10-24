@@ -54,6 +54,15 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE inversor.vwf
 set_global_assignment -name BDF_FILE somador.bdf
 set_global_assignment -name BDF_FILE complementador.bdf
 set_global_assignment -name BDF_FILE subtrator.bdf
+<<<<<<< HEAD
 set_global_assignment -name VECTOR_WAVEFORM_FILE BCD.vwf
 set_global_assignment -name BDF_FILE DEMUX.bdf
 set_global_assignment -name BDF_FILE MUX.bdf
+=======
+set_global_assignment -name BDF_FILE menor_bit.bdf
+set_global_assignment -name BDF_FILE maior_bit.bdf
+set_global_assignment -name BDF_FILE equals_bit.bdf
+set_global_assignment -name BDF_FILE compare_equals.bdf
+set_global_assignment -name BDF_FILE compare_less.bdf
+set_global_assignment -name BDF_FILE compare_greater.bdf
+>>>>>>> f3933a5f58a5ca831b29baba7feb2b05afc552a8
