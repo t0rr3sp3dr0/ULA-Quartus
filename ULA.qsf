@@ -58,3 +58,5 @@ set_global_assignment -name BDF_FILE menor_bit.bdf
 set_global_assignment -name BDF_FILE maior_bit.bdf
 set_global_assignment -name BDF_FILE equals_bit.bdf
 set_global_assignment -name BDF_FILE compare_equals.bdf
+set_global_assignment -name BDF_FILE compare_less.bdf
+set_global_assignment -name BDF_FILE compare_greater.bdf
