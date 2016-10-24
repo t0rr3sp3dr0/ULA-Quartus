@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for ULA
-Sun Oct 23 20:20:05 2016
+Sun Oct 23 22:59:49 2016
 Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -9,7 +9,20 @@ Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   1. Legal Notice
   2. TimeQuest Timing Analyzer Summary
   3. Parallel Compilation
-  4. TimeQuest Timing Analyzer Messages
+  4. Clocks
+  5. Fmax Summary
+  6. Setup Summary
+  7. Hold Summary
+  8. Recovery Summary
+  9. Removal Summary
+ 10. Minimum Pulse Width Summary
+ 11. Propagation Delay
+ 12. Minimum Propagation Delay
+ 13. Clock Transfers
+ 14. Report TCCS
+ 15. Report RSKM
+ 16. Unconstrained Paths
+ 17. TimeQuest Timing Analyzer Messages
 
 
 
@@ -56,24 +69,196 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
+----------
+; Clocks ;
+----------
+No clocks to report.
+
+
+----------------
+; Fmax Summary ;
+----------------
+No paths to report.
+
+
+-----------------
+; Setup Summary ;
+-----------------
+No paths to report.
+
+
+----------------
+; Hold Summary ;
+----------------
+No paths to report.
+
+
+--------------------
+; Recovery Summary ;
+--------------------
+No paths to report.
+
+
+-------------------
+; Removal Summary ;
+-------------------
+No paths to report.
+
+
+-------------------------------
+; Minimum Pulse Width Summary ;
+-------------------------------
+No paths to report.
+
+
++------------------------------------------------------+
+; Propagation Delay                                    ;
++------------+-------------+--------+----+----+--------+
+; Input Port ; Output Port ; RR     ; RF ; FR ; FF     ;
++------------+-------------+--------+----+----+--------+
+; S0         ; outA[0]     ; 12.050 ;    ;    ; 12.050 ;
+; S0         ; outA[1]     ; 11.239 ;    ;    ; 11.239 ;
+; S0         ; outA[2]     ; 12.064 ;    ;    ; 12.064 ;
+; S0         ; outA[3]     ; 12.127 ;    ;    ; 12.127 ;
+; S0         ; outB[0]     ; 12.038 ;    ;    ; 12.038 ;
+; S0         ; outB[1]     ; 10.678 ;    ;    ; 10.678 ;
+; S0         ; outB[2]     ; 11.744 ;    ;    ; 11.744 ;
+; S0         ; outB[3]     ; 11.227 ;    ;    ; 11.227 ;
+; S0         ; outS        ; 11.101 ;    ;    ; 11.101 ;
+; S1         ; outA[0]     ; 11.529 ;    ;    ; 11.529 ;
+; S1         ; outA[1]     ; 10.718 ;    ;    ; 10.718 ;
+; S1         ; outA[2]     ; 11.542 ;    ;    ; 11.542 ;
+; S1         ; outA[3]     ; 12.128 ;    ;    ; 12.128 ;
+; S1         ; outB[0]     ; 11.516 ;    ;    ; 11.516 ;
+; S1         ; outB[1]     ; 11.018 ;    ;    ; 11.018 ;
+; S1         ; outB[2]     ; 11.223 ;    ;    ; 11.223 ;
+; S1         ; outB[3]     ; 10.703 ;    ;    ; 10.703 ;
+; S1         ; outS        ; 10.579 ;    ;    ; 10.579 ;
+; S2         ; outA[0]     ; 11.381 ;    ;    ; 11.381 ;
+; S2         ; outA[1]     ; 10.566 ;    ;    ; 10.566 ;
+; S2         ; outA[2]     ; 11.411 ;    ;    ; 11.411 ;
+; S2         ; outA[3]     ; 11.454 ;    ;    ; 11.454 ;
+; S2         ; outB[0]     ; 11.381 ;    ;    ; 11.381 ;
+; S2         ; outB[1]     ; 10.344 ;    ;    ; 10.344 ;
+; S2         ; outB[2]     ; 11.071 ;    ;    ; 11.071 ;
+; S2         ; outB[3]     ; 10.574 ;    ;    ; 10.574 ;
+; S2         ; outS        ; 10.441 ;    ;    ; 10.441 ;
+; inA[0]     ; outA[0]     ; 11.929 ;    ;    ; 11.929 ;
+; inA[1]     ; outA[1]     ; 10.700 ;    ;    ; 10.700 ;
+; inA[2]     ; outA[2]     ; 11.889 ;    ;    ; 11.889 ;
+; inA[3]     ; outA[3]     ; 10.891 ;    ;    ; 10.891 ;
+; inB[0]     ; outB[0]     ; 11.354 ;    ;    ; 11.354 ;
+; inB[1]     ; outB[1]     ; 10.274 ;    ;    ; 10.274 ;
+; inB[2]     ; outB[2]     ; 11.932 ;    ;    ; 11.932 ;
+; inB[3]     ; outB[3]     ; 10.930 ;    ;    ; 10.930 ;
++------------+-------------+--------+----+----+--------+
+
+
++------------------------------------------------------+
+; Minimum Propagation Delay                            ;
++------------+-------------+--------+----+----+--------+
+; Input Port ; Output Port ; RR     ; RF ; FR ; FF     ;
++------------+-------------+--------+----+----+--------+
+; S0         ; outA[0]     ; 12.050 ;    ;    ; 12.050 ;
+; S0         ; outA[1]     ; 11.239 ;    ;    ; 11.239 ;
+; S0         ; outA[2]     ; 12.064 ;    ;    ; 12.064 ;
+; S0         ; outA[3]     ; 12.127 ;    ;    ; 12.127 ;
+; S0         ; outB[0]     ; 12.038 ;    ;    ; 12.038 ;
+; S0         ; outB[1]     ; 10.678 ;    ;    ; 10.678 ;
+; S0         ; outB[2]     ; 11.744 ;    ;    ; 11.744 ;
+; S0         ; outB[3]     ; 11.227 ;    ;    ; 11.227 ;
+; S0         ; outS        ; 11.101 ;    ;    ; 11.101 ;
+; S1         ; outA[0]     ; 11.529 ;    ;    ; 11.529 ;
+; S1         ; outA[1]     ; 10.718 ;    ;    ; 10.718 ;
+; S1         ; outA[2]     ; 11.542 ;    ;    ; 11.542 ;
+; S1         ; outA[3]     ; 12.128 ;    ;    ; 12.128 ;
+; S1         ; outB[0]     ; 11.516 ;    ;    ; 11.516 ;
+; S1         ; outB[1]     ; 11.018 ;    ;    ; 11.018 ;
+; S1         ; outB[2]     ; 11.223 ;    ;    ; 11.223 ;
+; S1         ; outB[3]     ; 10.703 ;    ;    ; 10.703 ;
+; S1         ; outS        ; 10.579 ;    ;    ; 10.579 ;
+; S2         ; outA[0]     ; 11.381 ;    ;    ; 11.381 ;
+; S2         ; outA[1]     ; 10.566 ;    ;    ; 10.566 ;
+; S2         ; outA[2]     ; 11.411 ;    ;    ; 11.411 ;
+; S2         ; outA[3]     ; 11.454 ;    ;    ; 11.454 ;
+; S2         ; outB[0]     ; 11.381 ;    ;    ; 11.381 ;
+; S2         ; outB[1]     ; 10.344 ;    ;    ; 10.344 ;
+; S2         ; outB[2]     ; 11.071 ;    ;    ; 11.071 ;
+; S2         ; outB[3]     ; 10.574 ;    ;    ; 10.574 ;
+; S2         ; outS        ; 10.441 ;    ;    ; 10.441 ;
+; inA[0]     ; outA[0]     ; 11.929 ;    ;    ; 11.929 ;
+; inA[1]     ; outA[1]     ; 10.700 ;    ;    ; 10.700 ;
+; inA[2]     ; outA[2]     ; 11.889 ;    ;    ; 11.889 ;
+; inA[3]     ; outA[3]     ; 10.891 ;    ;    ; 10.891 ;
+; inB[0]     ; outB[0]     ; 11.354 ;    ;    ; 11.354 ;
+; inB[1]     ; outB[1]     ; 10.274 ;    ;    ; 10.274 ;
+; inB[2]     ; outB[2]     ; 11.932 ;    ;    ; 11.932 ;
+; inB[3]     ; outB[3]     ; 10.930 ;    ;    ; 10.930 ;
++------------+-------------+--------+----+----+--------+
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 11    ; 11   ;
+; Unconstrained Input Port Paths  ; 35    ; 35   ;
+; Unconstrained Output Ports      ; 9     ; 9    ;
+; Unconstrained Output Port Paths ; 35    ; 35   ;
++---------------------------------+-------+------+
+
+
 +------------------------------------+
 ; TimeQuest Timing Analyzer Messages ;
 +------------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 32-bit TimeQuest Timing Analyzer
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Sun Oct 23 20:20:04 2016
+    Info: Processing started: Sun Oct 23 22:59:48 2016
 Info: Command: quartus_sta ULA -c ULA
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (306004): Started post-fitting delay annotation
 Info (306005): Delay annotation completed successfully
-Warning (332046): Timing netlist is empty. No timing reports will be generated.
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'ULA.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332159): No clocks to report
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 318 megabytes
-    Info: Processing ended: Sun Oct 23 20:20:05 2016
+    Info: Peak virtual memory: 322 megabytes
+    Info: Processing ended: Sun Oct 23 22:59:49 2016
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
