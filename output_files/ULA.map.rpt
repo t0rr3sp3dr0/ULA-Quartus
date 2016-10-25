@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ULA
-Sun Oct 23 22:59:37 2016
+Mon Oct 24 09:55:12 2016
 Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -11,10 +11,7 @@ Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
   5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Analysis & Synthesis Messages
+  6. Analysis & Synthesis Messages
 
 
 
@@ -40,15 +37,11 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                             ;
 +-----------------------------+--------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sun Oct 23 22:59:37 2016      ;
+; Analysis & Synthesis Status ; Failed - Mon Oct 24 09:55:12 2016          ;
 ; Quartus II 32-bit Version   ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name               ; ULA                                        ;
-; Top-level Entity Name       ; DEMUX                                      ;
+; Top-level Entity Name       ; ULA                                        ;
 ; Family                      ; MAX V                                      ;
-; Total logic elements        ; 9                                          ;
-; Total pins                  ; 20                                         ;
-; Total virtual pins          ; 0                                          ;
-; UFM blocks                  ; 0 / 1 ( 0 % )                              ;
 +-----------------------------+--------------------------------------------+
 
 
@@ -57,7 +50,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; DEMUX              ; ULA                ;
+; Top-level entity name                                                      ; ULA                ; ULA                ;
 ; Family name                                                                ; MAX V              ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -124,83 +117,36 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
-+-------------------------------------+
-; Parallel Compilation                ;
-+----------------------------+--------+
-; Processors                 ; Number ;
-+----------------------------+--------+
-; Number detected on machine ; 4      ;
-; Maximum allowed            ; 1      ;
-+----------------------------+--------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 3           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-8         ;   0.0%      ;
++----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                           ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                 ; Library ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------+---------+
-; DEMUX.bdf                        ; yes             ; User Block Diagram/Schematic File  ; /home/CIN/phts/Desktop/ULA-Quartus/DEMUX.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------+---------+
-
-
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Total logic elements                        ; 9     ;
-;     -- Combinational with no register       ; 9     ;
-;     -- Register only                        ; 0     ;
-;     -- Combinational with a register        ; 0     ;
-;                                             ;       ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 8     ;
-;     -- 3 input functions                    ; 1     ;
-;     -- 2 input functions                    ; 0     ;
-;     -- 1 input functions                    ; 0     ;
-;     -- 0 input functions                    ; 0     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 9     ;
-;     -- arithmetic mode                      ; 0     ;
-;     -- qfbk mode                            ; 0     ;
-;     -- register cascade mode                ; 0     ;
-;     -- synchronous clear/load mode          ; 0     ;
-;     -- asynchronous clear/load mode         ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 0     ;
-; I/O pins                                    ; 20    ;
-; Maximum fan-out node                        ; S2    ;
-; Maximum fan-out                             ; 9     ;
-; Total fan-out                               ; 44    ;
-; Average fan-out                             ; 1.52  ;
-+---------------------------------------------+-------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                  ;
-+----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
-; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
-; |DEMUX                     ; 9 (9)       ; 0            ; 0          ; 20   ; 0            ; 9 (9)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |DEMUX              ; work         ;
-+----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                    ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                          ; Library ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------+---------+
+; ULA.bdf                          ; yes             ; User Block Diagram/Schematic File  ; Z:/Users/pedro/Desktop/ULA-Quartus/ULA.bdf            ;         ;
+; subtrator.bdf                    ; yes             ; User Block Diagram/Schematic File  ; Z:/Users/pedro/Desktop/ULA-Quartus/subtrator.bdf      ;         ;
+; somador.bdf                      ; yes             ; User Block Diagram/Schematic File  ; Z:/Users/pedro/Desktop/ULA-Quartus/somador.bdf        ;         ;
+; MUX.bdf                          ; yes             ; User Block Diagram/Schematic File  ; Z:/Users/pedro/Desktop/ULA-Quartus/MUX.bdf            ;         ;
+; DEMUX.bdf                        ; yes             ; User Block Diagram/Schematic File  ; Z:/Users/pedro/Desktop/ULA-Quartus/DEMUX.bdf          ;         ;
+; complementador.bdf               ; yes             ; User Block Diagram/Schematic File  ; Z:/Users/pedro/Desktop/ULA-Quartus/complementador.bdf ;         ;
+; BCD.bdf                          ; yes             ; User Block Diagram/Schematic File  ; Z:/Users/pedro/Desktop/ULA-Quartus/BCD.bdf            ;         ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------+---------+
 
 
 +-------------------------------+
@@ -209,35 +155,52 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Sun Oct 23 22:59:35 2016
+    Info: Processing started: Mon Oct 24 09:55:09 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ULA -c ULA
-Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 1 design units, including 1 entities, in source file ULA.bdf
+Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 3 of the 3 physical processors detected instead.
+Info (12021): Found 1 design units, including 1 entities, in source file ula.bdf
     Info (12023): Found entity 1: ULA
-Info (12021): Found 1 design units, including 1 entities, in source file BCD.bdf
-    Info (12023): Found entity 1: BCD
-Info (12021): Found 1 design units, including 1 entities, in source file inversor.bdf
-    Info (12023): Found entity 1: inversor
-Info (12021): Found 1 design units, including 1 entities, in source file somador.bdf
-    Info (12023): Found entity 1: somador
-Info (12021): Found 1 design units, including 1 entities, in source file complementador.bdf
-    Info (12023): Found entity 1: complementador
 Info (12021): Found 1 design units, including 1 entities, in source file subtrator.bdf
     Info (12023): Found entity 1: subtrator
-Info (12021): Found 1 design units, including 1 entities, in source file DEMUX.bdf
-    Info (12023): Found entity 1: DEMUX
+Info (12021): Found 1 design units, including 1 entities, in source file somador.bdf
+    Info (12023): Found entity 1: somador
 Warning (12090): Entity "MUX" obtained from "MUX.bdf" instead of from Quartus II megafunction library
-Info (12021): Found 1 design units, including 1 entities, in source file MUX.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file mux.bdf
     Info (12023): Found entity 1: MUX
-Info (12127): Elaborating entity "DEMUX" for the top level hierarchy
-Info (21057): Implemented 29 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 11 input pins
-    Info (21059): Implemented 9 output pins
-    Info (21061): Implemented 9 logic cells
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 364 megabytes
-    Info: Processing ended: Sun Oct 23 22:59:37 2016
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+Info (12021): Found 1 design units, including 1 entities, in source file menor_bit.bdf
+    Info (12023): Found entity 1: menor_bit
+Info (12021): Found 1 design units, including 1 entities, in source file maior_bit.bdf
+    Info (12023): Found entity 1: maior_bit
+Info (12021): Found 1 design units, including 1 entities, in source file inversor.bdf
+    Info (12023): Found entity 1: inversor
+Info (12021): Found 1 design units, including 1 entities, in source file equals_bit.bdf
+    Info (12023): Found entity 1: equals_bit
+Info (12021): Found 1 design units, including 1 entities, in source file demux.bdf
+    Info (12023): Found entity 1: DEMUX
+Info (12021): Found 1 design units, including 1 entities, in source file complementador.bdf
+    Info (12023): Found entity 1: complementador
+Info (12021): Found 1 design units, including 1 entities, in source file compare_less.bdf
+    Info (12023): Found entity 1: compare_less
+Info (12021): Found 1 design units, including 1 entities, in source file compare_greater.bdf
+    Info (12023): Found entity 1: compare_greater
+Info (12021): Found 1 design units, including 1 entities, in source file compare_equals.bdf
+    Info (12023): Found entity 1: compare_equals
+Info (12021): Found 1 design units, including 1 entities, in source file bcd.bdf
+    Info (12023): Found entity 1: BCD
+Info (12127): Elaborating entity "ULA" for the top level hierarchy
+Warning (275008): Primitive "GND" of instance "inst31" not used
+Info (12128): Elaborating entity "MUX" for hierarchy "MUX:inst32"
+Info (12128): Elaborating entity "somador" for hierarchy "somador:inst13"
+Info (12128): Elaborating entity "BCD" for hierarchy "somador:inst13|BCD:inst3"
+Info (12128): Elaborating entity "DEMUX" for hierarchy "DEMUX:D000"
+Info (12128): Elaborating entity "subtrator" for hierarchy "subtrator:inst19"
+Info (12128): Elaborating entity "complementador" for hierarchy "subtrator:inst19|complementador:COMPLEMENTADOR"
+Error (275044): Port "B[3..0]" of type somador of instance "inst2" is missing source signal
+Error (12152): Can't elaborate user hierarchy "subtrator:inst19|complementador:COMPLEMENTADOR"
+Error: Quartus II 32-bit Analysis & Synthesis was unsuccessful. 2 errors, 2 warnings
+    Error: Peak virtual memory: 0 megabytes
+    Error: Processing ended: Mon Oct 24 09:55:12 2016
+    Error: Elapsed time: 00:00:03
+    Error: Total CPU time (on all processors): 00:00:01
 
 
