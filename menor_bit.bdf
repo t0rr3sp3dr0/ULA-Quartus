@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect 112 144 280 160)
 	(text "INPUT" (rect 125 0 154 10)(font "Arial" (font_size 6)))
-	(text "input_a" (rect 5 0 43 11)(font "Arial" ))
+	(text "input_a" (rect 5 0 42 11)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -39,7 +39,7 @@ applicable agreement for further details.
 	(input)
 	(rect 112 160 280 176)
 	(text "INPUT" (rect 125 0 154 10)(font "Arial" (font_size 6)))
-	(text "input_b" (rect 5 0 43 11)(font "Arial" ))
+	(text "input_b" (rect 5 0 42 11)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -55,7 +55,7 @@ applicable agreement for further details.
 	(input)
 	(rect 112 176 280 192)
 	(text "INPUT" (rect 125 0 154 10)(font "Arial" (font_size 6)))
-	(text "carry_in" (rect 5 0 47 11)(font "Arial" ))
+	(text "carry_in" (rect 5 0 46 11)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -84,7 +84,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 320 136 384 184)
+	(rect 328 136 392 184)
 	(text "AND2" (rect 1 0 29 10)(font "Arial" (font_size 6)))
 	(text "inst" (rect 3 37 21 48)(font "Arial" ))
 	(port
@@ -186,10 +186,10 @@ applicable agreement for further details.
 	(pt 408 160)
 )
 (connector
-	(pt 280 168)
-	(pt 320 168)
+	(pt 408 160)
+	(pt 392 160)
 )
 (connector
-	(pt 384 160)
-	(pt 408 160)
+	(pt 280 168)
+	(pt 328 168)
 )

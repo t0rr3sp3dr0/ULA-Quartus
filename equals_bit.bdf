@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect 136 160 304 176)
 	(text "INPUT" (rect 125 0 154 10)(font "Arial" (font_size 6)))
-	(text "carry_in" (rect 5 0 47 11)(font "Arial" ))
+	(text "carry_in" (rect 5 0 46 11)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -55,7 +55,7 @@ applicable agreement for further details.
 	(input)
 	(rect 136 112 304 128)
 	(text "INPUT" (rect 125 0 154 10)(font "Arial" (font_size 6)))
-	(text "input_A" (rect 5 0 46 11)(font "Arial" ))
+	(text "input_A" (rect 5 0 45 11)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))

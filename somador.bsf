@@ -26,16 +26,23 @@ applicable agreement for further details.
 	(port
 		(pt 0 32)
 		(input)
-		(text "A[3..0]" (rect 0 0 37 13)(font "Arial" (font_size 8)))
-		(text "A[3..0]" (rect 21 27 58 40)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
+		(text "S" (rect 0 0 10 13)(font "Arial" (font_size 8)))
+		(text "S" (rect 21 27 31 40)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
 	)
 	(port
 		(pt 0 48)
 		(input)
-		(text "B[3..0]" (rect 0 0 37 13)(font "Arial" (font_size 8)))
-		(text "B[3..0]" (rect 21 43 58 56)(font "Arial" (font_size 8)))
+		(text "A[3..0]" (rect 0 0 37 13)(font "Arial" (font_size 8)))
+		(text "A[3..0]" (rect 21 43 58 56)(font "Arial" (font_size 8)))
 		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "B[3..0]" (rect 0 0 37 13)(font "Arial" (font_size 8)))
+		(text "B[3..0]" (rect 21 59 58 72)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
 	)
 	(port
 		(pt 136 32)

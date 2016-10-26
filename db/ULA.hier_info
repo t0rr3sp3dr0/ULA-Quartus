@@ -1,0 +1,52 @@
+|compare_equals
+output <= equals_bit:inst3.output
+A[0] => equals_bit:inst3.input_A
+A[1] => equals_bit:inst2.input_A
+A[2] => equals_bit:inst1.input_A
+A[3] => equals_bit:inst.input_A
+B[0] => equals_bit:inst3.input_B
+B[1] => equals_bit:inst2.input_B
+B[2] => equals_bit:inst1.input_B
+B[3] => equals_bit:inst.input_B
+
+
+|compare_equals|equals_bit:inst3
+output <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+carry_in => inst2.IN0
+carry_in => inst1.IN1
+input_B => inst3.IN0
+input_B => inst.IN1
+input_A => inst3.IN1
+input_A => inst.IN0
+
+
+|compare_equals|equals_bit:inst2
+output <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+carry_in => inst2.IN0
+carry_in => inst1.IN1
+input_B => inst3.IN0
+input_B => inst.IN1
+input_A => inst3.IN1
+input_A => inst.IN0
+
+
+|compare_equals|equals_bit:inst1
+output <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+carry_in => inst2.IN0
+carry_in => inst1.IN1
+input_B => inst3.IN0
+input_B => inst.IN1
+input_A => inst3.IN1
+input_A => inst.IN0
+
+
+|compare_equals|equals_bit:inst
+output <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+carry_in => inst2.IN0
+carry_in => inst1.IN1
+input_B => inst3.IN0
+input_B => inst.IN1
+input_A => inst3.IN1
+input_A => inst.IN0
+
+

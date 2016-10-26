@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for ULA
-Sun Oct 23 22:59:49 2016
+Wed Oct 26 15:28:18 2016
 Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -51,22 +51,28 @@ applicable agreement for further details.
 ; Quartus II Version ; Version 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name      ; ULA                                                ;
 ; Device Family      ; MAX V                                              ;
-; Device Name        ; 5M40ZE64C4                                         ;
+; Device Name        ; 5M40ZM64C4                                         ;
 ; Timing Models      ; Final                                              ;
 ; Delay Model        ; Slow Model                                         ;
 ; Rise/Fall Delays   ; Unavailable                                        ;
 +--------------------+----------------------------------------------------+
 
 
-Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
-+-------------------------------------+
-; Parallel Compilation                ;
-+----------------------------+--------+
-; Processors                 ; Number ;
-+----------------------------+--------+
-; Number detected on machine ; 4      ;
-; Maximum allowed            ; 1      ;
-+----------------------------+--------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
 
 
 ----------
@@ -116,41 +122,14 @@ No paths to report.
 +------------+-------------+--------+----+----+--------+
 ; Input Port ; Output Port ; RR     ; RF ; FR ; FF     ;
 +------------+-------------+--------+----+----+--------+
-; S0         ; outA[0]     ; 12.050 ;    ;    ; 12.050 ;
-; S0         ; outA[1]     ; 11.239 ;    ;    ; 11.239 ;
-; S0         ; outA[2]     ; 12.064 ;    ;    ; 12.064 ;
-; S0         ; outA[3]     ; 12.127 ;    ;    ; 12.127 ;
-; S0         ; outB[0]     ; 12.038 ;    ;    ; 12.038 ;
-; S0         ; outB[1]     ; 10.678 ;    ;    ; 10.678 ;
-; S0         ; outB[2]     ; 11.744 ;    ;    ; 11.744 ;
-; S0         ; outB[3]     ; 11.227 ;    ;    ; 11.227 ;
-; S0         ; outS        ; 11.101 ;    ;    ; 11.101 ;
-; S1         ; outA[0]     ; 11.529 ;    ;    ; 11.529 ;
-; S1         ; outA[1]     ; 10.718 ;    ;    ; 10.718 ;
-; S1         ; outA[2]     ; 11.542 ;    ;    ; 11.542 ;
-; S1         ; outA[3]     ; 12.128 ;    ;    ; 12.128 ;
-; S1         ; outB[0]     ; 11.516 ;    ;    ; 11.516 ;
-; S1         ; outB[1]     ; 11.018 ;    ;    ; 11.018 ;
-; S1         ; outB[2]     ; 11.223 ;    ;    ; 11.223 ;
-; S1         ; outB[3]     ; 10.703 ;    ;    ; 10.703 ;
-; S1         ; outS        ; 10.579 ;    ;    ; 10.579 ;
-; S2         ; outA[0]     ; 11.381 ;    ;    ; 11.381 ;
-; S2         ; outA[1]     ; 10.566 ;    ;    ; 10.566 ;
-; S2         ; outA[2]     ; 11.411 ;    ;    ; 11.411 ;
-; S2         ; outA[3]     ; 11.454 ;    ;    ; 11.454 ;
-; S2         ; outB[0]     ; 11.381 ;    ;    ; 11.381 ;
-; S2         ; outB[1]     ; 10.344 ;    ;    ; 10.344 ;
-; S2         ; outB[2]     ; 11.071 ;    ;    ; 11.071 ;
-; S2         ; outB[3]     ; 10.574 ;    ;    ; 10.574 ;
-; S2         ; outS        ; 10.441 ;    ;    ; 10.441 ;
-; inA[0]     ; outA[0]     ; 11.929 ;    ;    ; 11.929 ;
-; inA[1]     ; outA[1]     ; 10.700 ;    ;    ; 10.700 ;
-; inA[2]     ; outA[2]     ; 11.889 ;    ;    ; 11.889 ;
-; inA[3]     ; outA[3]     ; 10.891 ;    ;    ; 10.891 ;
-; inB[0]     ; outB[0]     ; 11.354 ;    ;    ; 11.354 ;
-; inB[1]     ; outB[1]     ; 10.274 ;    ;    ; 10.274 ;
-; inB[2]     ; outB[2]     ; 11.932 ;    ;    ; 11.932 ;
-; inB[3]     ; outB[3]     ; 10.930 ;    ;    ; 10.930 ;
+; A[0]       ; output      ; 10.459 ;    ;    ; 10.459 ;
+; A[1]       ; output      ; 11.405 ;    ;    ; 11.405 ;
+; A[2]       ; output      ; 12.320 ;    ;    ; 12.320 ;
+; A[3]       ; output      ; 11.266 ;    ;    ; 11.266 ;
+; B[0]       ; output      ; 10.237 ;    ;    ; 10.237 ;
+; B[1]       ; output      ; 11.825 ;    ;    ; 11.825 ;
+; B[2]       ; output      ; 12.315 ;    ;    ; 12.315 ;
+; B[3]       ; output      ; 12.349 ;    ;    ; 12.349 ;
 +------------+-------------+--------+----+----+--------+
 
 
@@ -159,41 +138,14 @@ No paths to report.
 +------------+-------------+--------+----+----+--------+
 ; Input Port ; Output Port ; RR     ; RF ; FR ; FF     ;
 +------------+-------------+--------+----+----+--------+
-; S0         ; outA[0]     ; 12.050 ;    ;    ; 12.050 ;
-; S0         ; outA[1]     ; 11.239 ;    ;    ; 11.239 ;
-; S0         ; outA[2]     ; 12.064 ;    ;    ; 12.064 ;
-; S0         ; outA[3]     ; 12.127 ;    ;    ; 12.127 ;
-; S0         ; outB[0]     ; 12.038 ;    ;    ; 12.038 ;
-; S0         ; outB[1]     ; 10.678 ;    ;    ; 10.678 ;
-; S0         ; outB[2]     ; 11.744 ;    ;    ; 11.744 ;
-; S0         ; outB[3]     ; 11.227 ;    ;    ; 11.227 ;
-; S0         ; outS        ; 11.101 ;    ;    ; 11.101 ;
-; S1         ; outA[0]     ; 11.529 ;    ;    ; 11.529 ;
-; S1         ; outA[1]     ; 10.718 ;    ;    ; 10.718 ;
-; S1         ; outA[2]     ; 11.542 ;    ;    ; 11.542 ;
-; S1         ; outA[3]     ; 12.128 ;    ;    ; 12.128 ;
-; S1         ; outB[0]     ; 11.516 ;    ;    ; 11.516 ;
-; S1         ; outB[1]     ; 11.018 ;    ;    ; 11.018 ;
-; S1         ; outB[2]     ; 11.223 ;    ;    ; 11.223 ;
-; S1         ; outB[3]     ; 10.703 ;    ;    ; 10.703 ;
-; S1         ; outS        ; 10.579 ;    ;    ; 10.579 ;
-; S2         ; outA[0]     ; 11.381 ;    ;    ; 11.381 ;
-; S2         ; outA[1]     ; 10.566 ;    ;    ; 10.566 ;
-; S2         ; outA[2]     ; 11.411 ;    ;    ; 11.411 ;
-; S2         ; outA[3]     ; 11.454 ;    ;    ; 11.454 ;
-; S2         ; outB[0]     ; 11.381 ;    ;    ; 11.381 ;
-; S2         ; outB[1]     ; 10.344 ;    ;    ; 10.344 ;
-; S2         ; outB[2]     ; 11.071 ;    ;    ; 11.071 ;
-; S2         ; outB[3]     ; 10.574 ;    ;    ; 10.574 ;
-; S2         ; outS        ; 10.441 ;    ;    ; 10.441 ;
-; inA[0]     ; outA[0]     ; 11.929 ;    ;    ; 11.929 ;
-; inA[1]     ; outA[1]     ; 10.700 ;    ;    ; 10.700 ;
-; inA[2]     ; outA[2]     ; 11.889 ;    ;    ; 11.889 ;
-; inA[3]     ; outA[3]     ; 10.891 ;    ;    ; 10.891 ;
-; inB[0]     ; outB[0]     ; 11.354 ;    ;    ; 11.354 ;
-; inB[1]     ; outB[1]     ; 10.274 ;    ;    ; 10.274 ;
-; inB[2]     ; outB[2]     ; 11.932 ;    ;    ; 11.932 ;
-; inB[3]     ; outB[3]     ; 10.930 ;    ;    ; 10.930 ;
+; A[0]       ; output      ; 10.459 ;    ;    ; 10.459 ;
+; A[1]       ; output      ; 11.405 ;    ;    ; 11.405 ;
+; A[2]       ; output      ; 12.320 ;    ;    ; 12.320 ;
+; A[3]       ; output      ; 11.266 ;    ;    ; 11.266 ;
+; B[0]       ; output      ; 10.237 ;    ;    ; 10.237 ;
+; B[1]       ; output      ; 11.825 ;    ;    ; 11.825 ;
+; B[2]       ; output      ; 12.315 ;    ;    ; 12.315 ;
+; B[3]       ; output      ; 12.349 ;    ;    ; 12.349 ;
 +------------+-------------+--------+----+----+--------+
 
 
@@ -222,10 +174,10 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 11    ; 11   ;
-; Unconstrained Input Port Paths  ; 35    ; 35   ;
-; Unconstrained Output Ports      ; 9     ; 9    ;
-; Unconstrained Output Port Paths ; 35    ; 35   ;
+; Unconstrained Input Ports       ; 8     ; 8    ;
+; Unconstrained Input Port Paths  ; 8     ; 8    ;
+; Unconstrained Output Ports      ; 1     ; 1    ;
+; Unconstrained Output Port Paths ; 8     ; 8    ;
 +---------------------------------+-------+------+
 
 
@@ -235,10 +187,10 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus II 32-bit TimeQuest Timing Analyzer
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Sun Oct 23 22:59:48 2016
+    Info: Processing started: Wed Oct 26 15:28:17 2016
 Info: Command: quartus_sta ULA -c ULA
 Info: qsta_default_script.tcl version: #1
-Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (306004): Started post-fitting delay annotation
 Info (306005): Delay annotation completed successfully
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'ULA.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
@@ -256,9 +208,9 @@ Info (332140): No Minimum Pulse Width paths to report
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 322 megabytes
-    Info: Processing ended: Sun Oct 23 22:59:49 2016
+Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 348 megabytes
+    Info: Processing ended: Wed Oct 26 15:28:18 2016
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
