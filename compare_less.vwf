@@ -132,7 +132,7 @@ SIGNAL("B[0]")
 	PARENT = "B";
 }
 
-SIGNAL("output")
+SIGNAL("output_Z")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -262,17 +262,12 @@ TRANSITION_LIST("B[0]")
 	}
 }
 
-TRANSITION_LIST("output")
+TRANSITION_LIST("output_Z")
 {
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 500;
-			LEVEL 0 FOR 1.0;
-			LEVEL 1 FOR 1.0;
-		}
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -378,7 +373,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "output";
+	CHANNEL = "output_Z";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 10;

@@ -132,7 +132,7 @@ SIGNAL("B[0]")
 	PARENT = "B";
 }
 
-SIGNAL("output")
+SIGNAL("output_Z")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -206,11 +206,12 @@ TRANSITION_LIST("B[3]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 31;
-			LEVEL 0 FOR 16.0;
-			LEVEL 1 FOR 16.0;
+			REPEAT = 3;
+			LEVEL 0 FOR 128.0;
+			LEVEL 1 FOR 128.0;
 		}
-		LEVEL 0 FOR 8.0;
+		LEVEL 0 FOR 128.0;
+		LEVEL 1 FOR 104.0;
 	}
 }
 
@@ -221,11 +222,12 @@ TRANSITION_LIST("B[2]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 62;
-			LEVEL 0 FOR 8.0;
-			LEVEL 1 FOR 8.0;
+			REPEAT = 7;
+			LEVEL 0 FOR 64.0;
+			LEVEL 1 FOR 64.0;
 		}
-		LEVEL 0 FOR 8.0;
+		LEVEL 0 FOR 64.0;
+		LEVEL 1 FOR 40.0;
 	}
 }
 
@@ -236,10 +238,12 @@ TRANSITION_LIST("B[1]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 125;
-			LEVEL 0 FOR 4.0;
-			LEVEL 1 FOR 4.0;
+			REPEAT = 15;
+			LEVEL 0 FOR 32.0;
+			LEVEL 1 FOR 32.0;
 		}
+		LEVEL 0 FOR 32.0;
+		LEVEL 1 FOR 8.0;
 	}
 }
 
@@ -250,24 +254,20 @@ TRANSITION_LIST("B[0]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 250;
-			LEVEL 0 FOR 2.0;
-			LEVEL 1 FOR 2.0;
+			REPEAT = 31;
+			LEVEL 0 FOR 16.0;
+			LEVEL 1 FOR 16.0;
 		}
+		LEVEL 0 FOR 8.0;
 	}
 }
 
-TRANSITION_LIST("output")
+TRANSITION_LIST("output_Z")
 {
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 500;
-			LEVEL 0 FOR 1.0;
-			LEVEL 1 FOR 1.0;
-		}
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -373,7 +373,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "output";
+	CHANNEL = "output_Z";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 10;

@@ -20,7 +20,7 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 152 112)
+	(rect 16 16 168 112)
 	(text "menor_bit" (rect 5 0 62 13)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 81 26 92)(font "Arial" ))
 	(port
@@ -45,13 +45,13 @@ applicable agreement for further details.
 		(line (pt 0 64)(pt 16 64))
 	)
 	(port
-		(pt 136 32)
+		(pt 152 32)
 		(output)
-		(text "output" (rect 0 0 36 13)(font "Arial" (font_size 8)))
-		(text "output" (rect 79 27 115 40)(font "Arial" (font_size 8)))
-		(line (pt 136 32)(pt 120 32))
+		(text "output_Z" (rect 0 0 51 13)(font "Arial" (font_size 8)))
+		(text "output_Z" (rect 80 27 131 40)(font "Arial" (font_size 8)))
+		(line (pt 152 32)(pt 136 32))
 	)
 	(drawing
-		(rectangle (rect 16 16 120 80))
+		(rectangle (rect 16 16 136 80))
 	)
 )
