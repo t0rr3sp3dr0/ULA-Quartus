@@ -1,6 +1,6 @@
 EDA Netlist Writer report for ULA
-Wed Oct 26 15:29:08 2016
-Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Wed Oct 26 21:12:26 2016
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
 ---------------------
@@ -36,9 +36,9 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed Oct 26 15:29:08 2016 ;
+; EDA Netlist Writer Status ; Successful - Wed Oct 26 21:12:26 2016 ;
 ; Revision Name             ; ULA                                   ;
-; Top-level Entity Name     ; compare_equals                        ;
+; Top-level Entity Name     ; ULA                                   ;
 ; Family                    ; MAX V                                 ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -78,7 +78,7 @@ applicable agreement for further details.
 ; EDA Netlist Writer Messages ;
 +-----------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 32-bit EDA Netlist Writer
+Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
     Info: Copyright (C) 1991-2013 Altera Corporation. All rights reserved.
     Info: Your use of Altera Corporation's design tools, logic functions 
@@ -93,13 +93,13 @@ Info: Running Quartus II 32-bit EDA Netlist Writer
     Info: programming logic devices manufactured by Altera and sold by 
     Info: Altera or its authorized distributors.  Please refer to the 
     Info: applicable agreement for further details.
-    Info: Processing started: Wed Oct 26 15:29:08 2016
+    Info: Processing started: Wed Oct 26 21:12:25 2016
 Info: Command: quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=/home/CIN/phts/Desktop/ULA-Quartus/simulation/qsim/ ULA -c ULA
 Info (204019): Generated file ULA.vo in folder "/home/CIN/phts/Desktop/ULA-Quartus/simulation/qsim//" for EDA simulation tool
-Info: Quartus II 32-bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 333 megabytes
-    Info: Processing ended: Wed Oct 26 15:29:08 2016
-    Info: Elapsed time: 00:00:00
+Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 849 megabytes
+    Info: Processing ended: Wed Oct 26 21:12:26 2016
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

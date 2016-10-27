@@ -1,6 +1,6 @@
 TimeQuest Timing Analyzer report for ULA
-Wed Oct 26 15:28:18 2016
-Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Wed Oct 26 20:54:23 2016
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
 ---------------------
@@ -51,28 +51,22 @@ applicable agreement for further details.
 ; Quartus II Version ; Version 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name      ; ULA                                                ;
 ; Device Family      ; MAX V                                              ;
-; Device Name        ; 5M40ZM64C4                                         ;
+; Device Name        ; 5M40ZE64C4                                         ;
 ; Timing Models      ; Final                                              ;
 ; Delay Model        ; Slow Model                                         ;
 ; Rise/Fall Delays   ; Unavailable                                        ;
 +--------------------+----------------------------------------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
-+----------------------------+-------------+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
 
 
 ----------
@@ -122,14 +116,57 @@ No paths to report.
 +------------+-------------+--------+----+----+--------+
 ; Input Port ; Output Port ; RR     ; RF ; FR ; FF     ;
 +------------+-------------+--------+----+----+--------+
-; A[0]       ; output      ; 10.459 ;    ;    ; 10.459 ;
-; A[1]       ; output      ; 11.405 ;    ;    ; 11.405 ;
-; A[2]       ; output      ; 12.320 ;    ;    ; 12.320 ;
-; A[3]       ; output      ; 11.266 ;    ;    ; 11.266 ;
-; B[0]       ; output      ; 10.237 ;    ;    ; 10.237 ;
-; B[1]       ; output      ; 11.825 ;    ;    ; 11.825 ;
-; B[2]       ; output      ; 12.315 ;    ;    ; 12.315 ;
-; B[3]       ; output      ; 12.349 ;    ;    ; 12.349 ;
+; A[0]       ; F[0]        ; 11.638 ;    ;    ; 11.638 ;
+; A[0]       ; F[1]        ; 11.656 ;    ;    ; 11.656 ;
+; A[0]       ; F[2]        ; 16.253 ;    ;    ; 16.253 ;
+; A[0]       ; F[3]        ; 19.909 ;    ;    ; 19.909 ;
+; A[0]       ; overflow    ; 17.345 ;    ;    ; 17.345 ;
+; A[0]       ; status      ; 13.018 ;    ;    ; 13.018 ;
+; A[1]       ; F[1]        ; 17.274 ;    ;    ; 17.274 ;
+; A[1]       ; F[2]        ; 16.830 ;    ;    ; 16.830 ;
+; A[1]       ; F[3]        ; 20.486 ;    ;    ; 20.486 ;
+; A[1]       ; overflow    ; 17.922 ;    ;    ; 17.922 ;
+; A[1]       ; status      ; 16.831 ;    ;    ; 16.831 ;
+; A[2]       ; F[2]        ; 15.563 ;    ;    ; 15.563 ;
+; A[2]       ; F[3]        ; 17.412 ;    ;    ; 17.412 ;
+; A[2]       ; overflow    ; 14.848 ;    ;    ; 14.848 ;
+; A[2]       ; status      ; 16.414 ;    ;    ; 16.414 ;
+; A[3]       ; F[3]        ; 14.548 ;    ;    ; 14.548 ;
+; A[3]       ; overflow    ; 11.432 ;    ;    ; 11.432 ;
+; A[3]       ; status      ; 18.741 ;    ;    ; 18.741 ;
+; B[0]       ; F[0]        ; 12.593 ;    ;    ; 12.593 ;
+; B[0]       ; F[1]        ; 13.694 ;    ;    ; 13.694 ;
+; B[0]       ; F[2]        ; 16.198 ;    ;    ; 16.198 ;
+; B[0]       ; F[3]        ; 19.854 ;    ;    ; 19.854 ;
+; B[0]       ; overflow    ; 17.290 ;    ;    ; 17.290 ;
+; B[0]       ; status      ; 13.972 ;    ;    ; 13.972 ;
+; B[1]       ; F[1]        ; 15.031 ;    ;    ; 15.031 ;
+; B[1]       ; F[2]        ; 17.131 ;    ;    ; 17.131 ;
+; B[1]       ; F[3]        ; 20.787 ;    ;    ; 20.787 ;
+; B[1]       ; overflow    ; 18.223 ;    ;    ; 18.223 ;
+; B[1]       ; status      ; 15.960 ;    ;    ; 15.960 ;
+; B[2]       ; F[2]        ; 15.695 ;    ;    ; 15.695 ;
+; B[2]       ; F[3]        ; 18.369 ;    ;    ; 18.369 ;
+; B[2]       ; overflow    ; 15.707 ;    ;    ; 15.707 ;
+; B[2]       ; status      ; 16.582 ;    ;    ; 16.582 ;
+; B[3]       ; F[3]        ; 14.513 ;    ;    ; 14.513 ;
+; B[3]       ; overflow    ; 11.389 ;    ;    ; 11.389 ;
+; B[3]       ; status      ; 18.706 ;    ;    ; 18.706 ;
+; S[0]       ; F[0]        ; 11.799 ;    ;    ; 11.799 ;
+; S[0]       ; F[1]        ; 18.254 ;    ;    ; 18.254 ;
+; S[0]       ; F[2]        ; 16.894 ;    ;    ; 16.894 ;
+; S[0]       ; F[3]        ; 18.944 ;    ;    ; 18.944 ;
+; S[0]       ; status      ; 14.989 ;    ;    ; 14.989 ;
+; S[1]       ; F[0]        ; 13.524 ;    ;    ; 13.524 ;
+; S[1]       ; F[1]        ; 11.936 ;    ;    ; 11.936 ;
+; S[1]       ; F[2]        ; 10.706 ;    ;    ; 10.706 ;
+; S[1]       ; F[3]        ; 12.080 ;    ;    ; 12.080 ;
+; S[1]       ; status      ; 15.803 ;    ;    ; 15.803 ;
+; S[2]       ; F[0]        ; 11.865 ;    ;    ; 11.865 ;
+; S[2]       ; F[1]        ; 15.698 ;    ;    ; 15.698 ;
+; S[2]       ; F[2]        ; 15.080 ;    ;    ; 15.080 ;
+; S[2]       ; F[3]        ; 16.388 ;    ;    ; 16.388 ;
+; S[2]       ; status      ; 15.218 ;    ;    ; 15.218 ;
 +------------+-------------+--------+----+----+--------+
 
 
@@ -138,14 +175,57 @@ No paths to report.
 +------------+-------------+--------+----+----+--------+
 ; Input Port ; Output Port ; RR     ; RF ; FR ; FF     ;
 +------------+-------------+--------+----+----+--------+
-; A[0]       ; output      ; 10.459 ;    ;    ; 10.459 ;
-; A[1]       ; output      ; 11.405 ;    ;    ; 11.405 ;
-; A[2]       ; output      ; 12.320 ;    ;    ; 12.320 ;
-; A[3]       ; output      ; 11.266 ;    ;    ; 11.266 ;
-; B[0]       ; output      ; 10.237 ;    ;    ; 10.237 ;
-; B[1]       ; output      ; 11.825 ;    ;    ; 11.825 ;
-; B[2]       ; output      ; 12.315 ;    ;    ; 12.315 ;
-; B[3]       ; output      ; 12.349 ;    ;    ; 12.349 ;
+; A[0]       ; F[0]        ; 11.638 ;    ;    ; 11.638 ;
+; A[0]       ; F[1]        ; 11.656 ;    ;    ; 11.656 ;
+; A[0]       ; F[2]        ; 16.082 ;    ;    ; 16.082 ;
+; A[0]       ; F[3]        ; 19.388 ;    ;    ; 19.388 ;
+; A[0]       ; overflow    ; 16.835 ;    ;    ; 16.835 ;
+; A[0]       ; status      ; 12.829 ;    ;    ; 12.829 ;
+; A[1]       ; F[1]        ; 16.937 ;    ;    ; 16.937 ;
+; A[1]       ; F[2]        ; 16.659 ;    ;    ; 16.659 ;
+; A[1]       ; F[3]        ; 19.965 ;    ;    ; 19.965 ;
+; A[1]       ; overflow    ; 17.412 ;    ;    ; 17.412 ;
+; A[1]       ; status      ; 15.806 ;    ;    ; 15.806 ;
+; A[2]       ; F[2]        ; 14.975 ;    ;    ; 14.975 ;
+; A[2]       ; F[3]        ; 17.059 ;    ;    ; 17.059 ;
+; A[2]       ; overflow    ; 14.506 ;    ;    ; 14.506 ;
+; A[2]       ; status      ; 15.611 ;    ;    ; 15.611 ;
+; A[3]       ; F[3]        ; 14.093 ;    ;    ; 14.093 ;
+; A[3]       ; overflow    ; 11.432 ;    ;    ; 11.432 ;
+; A[3]       ; status      ; 14.236 ;    ;    ; 14.236 ;
+; B[0]       ; F[0]        ; 10.993 ;    ;    ; 10.993 ;
+; B[0]       ; F[1]        ; 11.685 ;    ;    ; 11.685 ;
+; B[0]       ; F[2]        ; 14.374 ;    ;    ; 14.374 ;
+; B[0]       ; F[3]        ; 16.206 ;    ;    ; 16.206 ;
+; B[0]       ; overflow    ; 13.544 ;    ;    ; 13.544 ;
+; B[0]       ; status      ; 13.783 ;    ;    ; 13.783 ;
+; B[1]       ; F[1]        ; 13.112 ;    ;    ; 13.112 ;
+; B[1]       ; F[2]        ; 13.798 ;    ;    ; 13.798 ;
+; B[1]       ; F[3]        ; 15.634 ;    ;    ; 15.634 ;
+; B[1]       ; overflow    ; 12.972 ;    ;    ; 12.972 ;
+; B[1]       ; status      ; 14.985 ;    ;    ; 14.985 ;
+; B[2]       ; F[2]        ; 14.611 ;    ;    ; 14.611 ;
+; B[2]       ; F[3]        ; 17.224 ;    ;    ; 17.224 ;
+; B[2]       ; overflow    ; 14.671 ;    ;    ; 14.671 ;
+; B[2]       ; status      ; 14.584 ;    ;    ; 14.584 ;
+; B[3]       ; F[3]        ; 13.506 ;    ;    ; 13.506 ;
+; B[3]       ; overflow    ; 10.840 ;    ;    ; 10.840 ;
+; B[3]       ; status      ; 14.201 ;    ;    ; 14.201 ;
+; S[0]       ; F[0]        ; 11.799 ;    ;    ; 11.799 ;
+; S[0]       ; F[1]        ; 13.403 ;    ;    ; 13.403 ;
+; S[0]       ; F[2]        ; 14.719 ;    ;    ; 14.719 ;
+; S[0]       ; F[3]        ; 14.407 ;    ;    ; 14.407 ;
+; S[0]       ; status      ; 14.989 ;    ;    ; 14.989 ;
+; S[1]       ; F[0]        ; 11.188 ;    ;    ; 11.188 ;
+; S[1]       ; F[1]        ; 11.936 ;    ;    ; 11.936 ;
+; S[1]       ; F[2]        ; 10.706 ;    ;    ; 10.706 ;
+; S[1]       ; F[3]        ; 12.080 ;    ;    ; 12.080 ;
+; S[1]       ; status      ; 14.386 ;    ;    ; 14.386 ;
+; S[2]       ; F[0]        ; 11.865 ;    ;    ; 11.865 ;
+; S[2]       ; F[1]        ; 10.278 ;    ;    ; 10.278 ;
+; S[2]       ; F[2]        ; 10.209 ;    ;    ; 10.209 ;
+; S[2]       ; F[3]        ; 10.752 ;    ;    ; 10.752 ;
+; S[2]       ; status      ; 12.728 ;    ;    ; 12.728 ;
 +------------+-------------+--------+----+----+--------+
 
 
@@ -174,10 +254,10 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 8     ; 8    ;
-; Unconstrained Input Port Paths  ; 8     ; 8    ;
-; Unconstrained Output Ports      ; 1     ; 1    ;
-; Unconstrained Output Port Paths ; 8     ; 8    ;
+; Unconstrained Input Ports       ; 11    ; 11   ;
+; Unconstrained Input Port Paths  ; 51    ; 51   ;
+; Unconstrained Output Ports      ; 6     ; 6    ;
+; Unconstrained Output Port Paths ; 51    ; 51   ;
 +---------------------------------+-------+------+
 
 
@@ -185,12 +265,12 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; TimeQuest Timing Analyzer Messages ;
 +------------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 32-bit TimeQuest Timing Analyzer
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Wed Oct 26 15:28:17 2016
+    Info: Processing started: Wed Oct 26 20:54:22 2016
 Info: Command: quartus_sta ULA -c ULA
 Info: qsta_default_script.tcl version: #1
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (306004): Started post-fitting delay annotation
 Info (306005): Delay annotation completed successfully
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'ULA.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
@@ -208,9 +288,9 @@ Info (332140): No Minimum Pulse Width paths to report
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 348 megabytes
-    Info: Processing ended: Wed Oct 26 15:28:18 2016
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 544 megabytes
+    Info: Processing ended: Wed Oct 26 20:54:23 2016
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
