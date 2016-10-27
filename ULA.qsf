@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "MAX V"
 set_global_assignment -name DEVICE auto
-set_global_assignment -name TOP_LEVEL_ENTITY placa_BCD
+set_global_assignment -name TOP_LEVEL_ENTITY placa_ULA
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "09:11:58  OCTOBER 24, 2016"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
@@ -49,7 +49,6 @@ set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "/home/CIN/phts/Deskto
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
 set_global_assignment -name BDF_FILE menor_sinal.bdf
 set_global_assignment -name BDF_FILE BCD_demux.bdf
-set_global_assignment -name BDF_FILE BCD_2D.bdf
 set_global_assignment -name BDF_FILE display_encoder.bdf
 set_global_assignment -name BDF_FILE somador_bit.bdf
 set_global_assignment -name BDF_FILE equals_bit.bdf
@@ -60,7 +59,6 @@ set_global_assignment -name BDF_FILE bitequals.bdf
 set_global_assignment -name BDF_FILE subtrator.bdf
 set_global_assignment -name BDF_FILE ULA.bdf
 set_global_assignment -name BDF_FILE somador.bdf
-set_global_assignment -name BDF_FILE MUX.bdf
 set_global_assignment -name BDF_FILE menor_bit.bdf
 set_global_assignment -name BDF_FILE maior_bit.bdf
 set_global_assignment -name BDF_FILE inversor.bdf
