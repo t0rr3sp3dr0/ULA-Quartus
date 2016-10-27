@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "MAX V"
 set_global_assignment -name DEVICE auto
-set_global_assignment -name TOP_LEVEL_ENTITY ULA
+set_global_assignment -name TOP_LEVEL_ENTITY placa_ULA
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "09:11:58  OCTOBER 24, 2016"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
@@ -82,3 +82,5 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE compare_greater.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE compare_equals.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE BCD_2D.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE BCD.vwf
+set_global_assignment -name BDF_FILE b2d.bdf
+set_global_assignment -name BDF_FILE placa_ULA.bdf
