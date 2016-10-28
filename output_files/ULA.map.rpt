@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ULA
-Thu Oct 27 18:40:36 2016
+Thu Oct 27 23:07:45 2016
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,13 +40,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                             ;
 +-----------------------------+--------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Thu Oct 27 18:40:36 2016      ;
+; Analysis & Synthesis Status ; Successful - Thu Oct 27 23:07:45 2016      ;
 ; Quartus II 64-Bit Version   ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name               ; ULA                                        ;
-; Top-level Entity Name       ; placa_ULA                                  ;
+; Top-level Entity Name       ; placa_BCD                                  ;
 ; Family                      ; MAX V                                      ;
-; Total logic elements        ; 24                                         ;
-; Total pins                  ; 21                                         ;
+; Total logic elements        ; 11                                         ;
+; Total pins                  ; 17                                         ;
 ; Total virtual pins          ; 0                                          ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                              ;
 +-----------------------------+--------------------------------------------+
@@ -57,7 +57,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; placa_ULA          ; ULA                ;
+; Top-level entity name                                                      ; placa_BCD          ; ULA                ;
 ; Family name                                                                ; MAX V              ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -124,15 +124,21 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
-+-------------------------------------+
-; Parallel Compilation                ;
-+----------------------------+--------+
-; Processors                 ; Number ;
-+----------------------------+--------+
-; Number detected on machine ; 4      ;
-; Maximum allowed            ; 1      ;
-+----------------------------+--------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -140,21 +146,11 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+------------------------------------+--------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                           ; Library ;
 +----------------------------------+-----------------+------------------------------------+--------------------------------------------------------+---------+
-; menor_sinal.bdf                  ; yes             ; User Block Diagram/Schematic File  ; /home/CIN/phts/Desktop/ULA-Quartus/menor_sinal.bdf     ;         ;
+; BCD_decoder.bdf                  ; yes             ; User Block Diagram/Schematic File  ; /home/CIN/phts/Desktop/ULA-Quartus/BCD_decoder.bdf     ;         ;
 ; display_encoder.bdf              ; yes             ; User Block Diagram/Schematic File  ; /home/CIN/phts/Desktop/ULA-Quartus/display_encoder.bdf ;         ;
 ; somador_bit.bdf                  ; yes             ; User Block Diagram/Schematic File  ; /home/CIN/phts/Desktop/ULA-Quartus/somador_bit.bdf     ;         ;
-; equals_bit.bdf                   ; yes             ; User Block Diagram/Schematic File  ; /home/CIN/phts/Desktop/ULA-Quartus/equals_bit.bdf      ;         ;
-; AND30.bdf                        ; yes             ; User Block Diagram/Schematic File  ; /home/CIN/phts/Desktop/ULA-Quartus/AND30.bdf           ;         ;
-; XOR30.bdf                        ; yes             ; User Block Diagram/Schematic File  ; /home/CIN/phts/Desktop/ULA-Quartus/XOR30.bdf           ;         ;
-; ULA.bdf                          ; yes             ; User Block Diagram/Schematic File  ; /home/CIN/phts/Desktop/ULA-Quartus/ULA.bdf             ;         ;
-; somador.bdf                      ; yes             ; User Block Diagram/Schematic File  ; /home/CIN/phts/Desktop/ULA-Quartus/somador.bdf         ;         ;
-; menor_bit.bdf                    ; yes             ; User Block Diagram/Schematic File  ; /home/CIN/phts/Desktop/ULA-Quartus/menor_bit.bdf       ;         ;
-; DEMUX.bdf                        ; yes             ; User Block Diagram/Schematic File  ; /home/CIN/phts/Desktop/ULA-Quartus/DEMUX.bdf           ;         ;
-; compare_less.bdf                 ; yes             ; User Block Diagram/Schematic File  ; /home/CIN/phts/Desktop/ULA-Quartus/compare_less.bdf    ;         ;
-; compare_greater.bdf              ; yes             ; User Block Diagram/Schematic File  ; /home/CIN/phts/Desktop/ULA-Quartus/compare_greater.bdf ;         ;
-; compare_equals.bdf               ; yes             ; User Block Diagram/Schematic File  ; /home/CIN/phts/Desktop/ULA-Quartus/compare_equals.bdf  ;         ;
-; b2d.bdf                          ; yes             ; User Block Diagram/Schematic File  ; /home/CIN/phts/Desktop/ULA-Quartus/b2d.bdf             ;         ;
-; placa_ULA.bdf                    ; yes             ; User Block Diagram/Schematic File  ; /home/CIN/phts/Desktop/ULA-Quartus/placa_ULA.bdf       ;         ;
+; BCD.bdf                          ; yes             ; User Block Diagram/Schematic File  ; /home/CIN/phts/Desktop/ULA-Quartus/BCD.bdf             ;         ;
+; placa_BCD.bdf                    ; yes             ; User Block Diagram/Schematic File  ; /home/CIN/phts/Desktop/ULA-Quartus/placa_BCD.bdf       ;         ;
 +----------------------------------+-----------------+------------------------------------+--------------------------------------------------------+---------+
 
 
@@ -163,20 +159,20 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Total logic elements                        ; 24    ;
-;     -- Combinational with no register       ; 24    ;
+; Total logic elements                        ; 11    ;
+;     -- Combinational with no register       ; 11    ;
 ;     -- Register only                        ; 0     ;
 ;     -- Combinational with a register        ; 0     ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 15    ;
-;     -- 3 input functions                    ; 6     ;
-;     -- 2 input functions                    ; 3     ;
+;     -- 4 input functions                    ; 8     ;
+;     -- 3 input functions                    ; 2     ;
+;     -- 2 input functions                    ; 1     ;
 ;     -- 1 input functions                    ; 0     ;
 ;     -- 0 input functions                    ; 0     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 24    ;
+;     -- normal mode                          ; 11    ;
 ;     -- arithmetic mode                      ; 0     ;
 ;     -- qfbk mode                            ; 0     ;
 ;     -- register cascade mode                ; 0     ;
@@ -184,34 +180,26 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;     -- asynchronous clear/load mode         ; 0     ;
 ;                                             ;       ;
 ; Total registers                             ; 0     ;
-; I/O pins                                    ; 21    ;
-; Maximum fan-out node                        ; S[1]  ;
-; Maximum fan-out                             ; 8     ;
-; Total fan-out                               ; 87    ;
-; Average fan-out                             ; 1.93  ;
+; I/O pins                                    ; 17    ;
+; Maximum fan-out node                        ; B[2]  ;
+; Maximum fan-out                             ; 3     ;
+; Total fan-out                               ; 42    ;
+; Average fan-out                             ; 1.50  ;
 +---------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                              ;
-+--------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node     ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                         ; Library Name ;
-+--------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------+--------------+
-; |placa_ULA                     ; 24 (0)      ; 0            ; 0          ; 21   ; 0            ; 24 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |placa_ULA                                                  ; work         ;
-;    |ULA:ULA|                   ; 18 (0)      ; 0            ; 0          ; 0    ; 0            ; 18 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |placa_ULA|ULA:ULA                                          ; work         ;
-;       |DEMUX:inst|             ; 12 (12)     ; 0            ; 0          ; 0    ; 0            ; 12 (12)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |placa_ULA|ULA:ULA|DEMUX:inst                               ; work         ;
-;       |XOR30:inst5|            ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |placa_ULA|ULA:ULA|XOR30:inst5                              ; work         ;
-;       |somador:COMPLEMENTADOR| ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |placa_ULA|ULA:ULA|somador:COMPLEMENTADOR                   ; work         ;
-;          |somador_bit:inst2|   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |placa_ULA|ULA:ULA|somador:COMPLEMENTADOR|somador_bit:inst2 ; work         ;
-;       |somador:SOMADOR|        ; 2 (0)       ; 0            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |placa_ULA|ULA:ULA|somador:SOMADOR                          ; work         ;
-;          |somador_bit:inst1|   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |placa_ULA|ULA:ULA|somador:SOMADOR|somador_bit:inst1        ; work         ;
-;          |somador_bit:inst2|   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |placa_ULA|ULA:ULA|somador:SOMADOR|somador_bit:inst2        ; work         ;
-;       |somador:SUBTRATOR|      ; 2 (0)       ; 0            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |placa_ULA|ULA:ULA|somador:SUBTRATOR                        ; work         ;
-;          |somador_bit:inst1|   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |placa_ULA|ULA:ULA|somador:SUBTRATOR|somador_bit:inst1      ; work         ;
-;          |somador_bit:inst2|   ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |placa_ULA|ULA:ULA|somador:SUBTRATOR|somador_bit:inst2      ; work         ;
-;    |b2d:BINARY_TO_DECIMAL|     ; 6 (0)       ; 0            ; 0          ; 0    ; 0            ; 6 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |placa_ULA|b2d:BINARY_TO_DECIMAL                            ; work         ;
-;       |somador:inst|           ; 6 (6)       ; 0            ; 0          ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |placa_ULA|b2d:BINARY_TO_DECIMAL|somador:inst               ; work         ;
-+--------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------------------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                     ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                    ; Library Name ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------+--------------+
+; |placa_BCD                 ; 11 (0)      ; 0            ; 0          ; 17   ; 0            ; 11 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |placa_BCD                             ; work         ;
+;    |BCD:inst|              ; 8 (1)       ; 0            ; 0          ; 0    ; 0            ; 8 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |placa_BCD|BCD:inst                    ; work         ;
+;       |somador_bit:inst10| ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |placa_BCD|BCD:inst|somador_bit:inst10 ; work         ;
+;       |somador_bit:inst11| ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |placa_BCD|BCD:inst|somador_bit:inst11 ; work         ;
+;       |somador_bit:inst9|  ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |placa_BCD|BCD:inst|somador_bit:inst9  ; work         ;
+;    |display_encoder:inst3| ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |placa_BCD|display_encoder:inst3       ; work         ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -236,13 +224,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Thu Oct 27 18:40:35 2016
+    Info: Processing started: Thu Oct 27 23:07:44 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ULA -c ULA
-Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file BCD_decoder.bdf
+    Info (12023): Found entity 1: BCD_decoder
 Info (12021): Found 1 design units, including 1 entities, in source file menor_sinal.bdf
     Info (12023): Found entity 1: menor_sinal
-Info (12021): Found 1 design units, including 1 entities, in source file BCD_demux.bdf
-    Info (12023): Found entity 1: BCD_demux
 Info (12021): Found 1 design units, including 1 entities, in source file display_encoder.bdf
     Info (12023): Found entity 1: display_encoder
 Info (12021): Found 1 design units, including 1 entities, in source file somador_bit.bdf
@@ -253,17 +241,12 @@ Info (12021): Found 1 design units, including 1 entities, in source file AND30.b
     Info (12023): Found entity 1: AND30
 Info (12021): Found 1 design units, including 1 entities, in source file XOR30.bdf
     Info (12023): Found entity 1: XOR30
-Warning (12019): Can't analyze file -- file complementador.bdf is missing
-Warning (12019): Can't analyze file -- file bitequals.bdf is missing
-Warning (12019): Can't analyze file -- file subtrator.bdf is missing
 Info (12021): Found 1 design units, including 1 entities, in source file ULA.bdf
     Info (12023): Found entity 1: ULA
 Info (12021): Found 1 design units, including 1 entities, in source file somador.bdf
     Info (12023): Found entity 1: somador
 Info (12021): Found 1 design units, including 1 entities, in source file menor_bit.bdf
     Info (12023): Found entity 1: menor_bit
-Warning (12019): Can't analyze file -- file maior_bit.bdf is missing
-Warning (12019): Can't analyze file -- file inversor.bdf is missing
 Info (12021): Found 1 design units, including 1 entities, in source file DEMUX.bdf
     Info (12023): Found entity 1: DEMUX
 Info (12021): Found 1 design units, including 1 entities, in source file compare_less.bdf
@@ -280,40 +263,27 @@ Info (12021): Found 1 design units, including 1 entities, in source file placa_U
     Info (12023): Found entity 1: placa_ULA
 Info (12021): Found 1 design units, including 1 entities, in source file placa_BCD.bdf
     Info (12023): Found entity 1: placa_BCD
-Info (12127): Elaborating entity "placa_ULA" for the top level hierarchy
-Info (12128): Elaborating entity "display_encoder" for hierarchy "display_encoder:HEX_TO_DISPLAY"
-Warning (275009): Pin "8" not connected
-Info (12128): Elaborating entity "b2d" for hierarchy "b2d:BINARY_TO_DECIMAL"
-Info (12128): Elaborating entity "somador" for hierarchy "b2d:BINARY_TO_DECIMAL|somador:inst"
-Info (12128): Elaborating entity "somador_bit" for hierarchy "b2d:BINARY_TO_DECIMAL|somador:inst|somador_bit:inst3"
-Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ULA"
-Info (12128): Elaborating entity "DEMUX" for hierarchy "ULA:ULA|DEMUX:inst"
-Info (12128): Elaborating entity "compare_equals" for hierarchy "ULA:ULA|compare_equals:inst8"
-Warning (275011): Block or symbol "VCC" of instance "inst4" overlaps another block or symbol
-Info (12128): Elaborating entity "equals_bit" for hierarchy "ULA:ULA|compare_equals:inst8|equals_bit:inst6"
-Info (12128): Elaborating entity "compare_greater" for hierarchy "ULA:ULA|compare_greater:inst3"
-Info (12128): Elaborating entity "compare_less" for hierarchy "ULA:ULA|compare_greater:inst3|compare_less:inst2"
-Warning (275011): Block or symbol "GND" of instance "inst5" overlaps another block or symbol
-Warning (275011): Block or symbol "menor_sinal" of instance "inst" overlaps another block or symbol
-Info (12128): Elaborating entity "menor_sinal" for hierarchy "ULA:ULA|compare_greater:inst3|compare_less:inst2|menor_sinal:inst"
-Info (12128): Elaborating entity "menor_bit" for hierarchy "ULA:ULA|compare_greater:inst3|compare_less:inst2|menor_bit:inst11"
-Info (12128): Elaborating entity "AND30" for hierarchy "ULA:ULA|AND30:inst4"
-Info (12128): Elaborating entity "XOR30" for hierarchy "ULA:ULA|XOR30:inst5"
+Info (12127): Elaborating entity "placa_BCD" for the top level hierarchy
+Info (12128): Elaborating entity "BCD" for hierarchy "BCD:inst"
+Info (12128): Elaborating entity "somador_bit" for hierarchy "BCD:inst|somador_bit:inst11"
+Info (12128): Elaborating entity "display_encoder" for hierarchy "display_encoder:inst3"
+Warning (275009): Pin "_8" not connected
+Info (12128): Elaborating entity "BCD_decoder" for hierarchy "BCD_decoder:inst2"
 Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "display_dp" is stuck at VCC
     Warning (13410): Pin "display_a" is stuck at VCC
     Warning (13410): Pin "display_b" is stuck at VCC
     Warning (13410): Pin "display_c" is stuck at VCC
     Warning (13410): Pin "display_d" is stuck at VCC
-    Warning (13410): Pin "display_e" is stuck at VCC
     Warning (13410): Pin "display_f" is stuck at VCC
     Warning (13410): Pin "display_g" is stuck at VCC
-Info (21057): Implemented 45 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 11 input pins
-    Info (21059): Implemented 10 output pins
-    Info (21061): Implemented 24 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 18 warnings
-    Info: Peak virtual memory: 656 megabytes
-    Info: Processing ended: Thu Oct 27 18:40:36 2016
+Info (21057): Implemented 28 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
+    Info (21059): Implemented 9 output pins
+    Info (21061): Implemented 11 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 9 warnings
+    Info: Peak virtual memory: 665 megabytes
+    Info: Processing ended: Thu Oct 27 23:07:45 2016
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:02
 

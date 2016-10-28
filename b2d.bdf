@@ -37,26 +37,9 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 528 -16 544 160)
-	(text "OUTPUT" (rect 0 135 10 175)(font "Arial" (font_size 6))(vertical))
-	(text "1XXX" (rect 1 5 12 36)(font "Arial" )(vertical))
-	(pt 8 176)
-	(drawing
-		(line (pt 8 176)(pt 8 124))
-		(line (pt 4 124)(pt 4 98))
-		(line (pt 12 124)(pt 12 98))
-		(line (pt 12 124)(pt 4 124))
-		(line (pt 4 98)(pt 8 94))
-		(line (pt 8 94)(pt 12 98))
-		(line (pt 12 98)(pt 8 94))
-	)
-	(rotate90)
-)
-(pin
-	(output)
 	(rect 792 312 968 328)
 	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
-	(text "0000" (rect 90 0 115 11)(font "Arial" ))
+	(text "_0000" (rect 90 0 121 11)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -72,7 +55,7 @@ applicable agreement for further details.
 	(output)
 	(rect 792 392 968 408)
 	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
-	(text "0001" (rect 90 0 114 11)(font "Arial" ))
+	(text "_0001" (rect 90 0 120 11)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -88,7 +71,7 @@ applicable agreement for further details.
 	(output)
 	(rect 792 472 968 488)
 	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
-	(text "0010" (rect 90 0 115 11)(font "Arial" ))
+	(text "_0010" (rect 90 0 121 11)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -104,7 +87,7 @@ applicable agreement for further details.
 	(output)
 	(rect 792 552 968 568)
 	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
-	(text "0011" (rect 90 0 114 11)(font "Arial" ))
+	(text "_0011" (rect 90 0 120 11)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -120,7 +103,7 @@ applicable agreement for further details.
 	(output)
 	(rect 792 632 968 648)
 	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
-	(text "0100" (rect 90 0 115 11)(font "Arial" ))
+	(text "_0100" (rect 90 0 121 11)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -136,7 +119,7 @@ applicable agreement for further details.
 	(output)
 	(rect 792 712 968 728)
 	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
-	(text "0101" (rect 90 0 114 11)(font "Arial" ))
+	(text "_0101" (rect 90 0 120 11)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -152,7 +135,7 @@ applicable agreement for further details.
 	(output)
 	(rect 792 792 968 808)
 	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
-	(text "0110" (rect 90 0 115 11)(font "Arial" ))
+	(text "_0110" (rect 90 0 121 11)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -168,7 +151,7 @@ applicable agreement for further details.
 	(output)
 	(rect 792 872 968 888)
 	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
-	(text "0111" (rect 90 0 114 11)(font "Arial" ))
+	(text "_0111" (rect 90 0 120 11)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -184,7 +167,7 @@ applicable agreement for further details.
 	(output)
 	(rect 792 952 968 968)
 	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
-	(text "1000" (rect 90 0 115 11)(font "Arial" ))
+	(text "_1000" (rect 90 0 121 11)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -200,7 +183,7 @@ applicable agreement for further details.
 	(output)
 	(rect 792 1032 968 1048)
 	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
-	(text "1001" (rect 90 0 114 11)(font "Arial" ))
+	(text "_1001" (rect 90 0 120 11)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -216,7 +199,7 @@ applicable agreement for further details.
 	(output)
 	(rect 792 1112 968 1128)
 	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
-	(text "1010" (rect 90 0 115 11)(font "Arial" ))
+	(text "_1010" (rect 90 0 121 11)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -232,7 +215,7 @@ applicable agreement for further details.
 	(output)
 	(rect 792 1192 968 1208)
 	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
-	(text "1011" (rect 90 0 114 11)(font "Arial" ))
+	(text "_1011" (rect 90 0 120 11)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -248,7 +231,7 @@ applicable agreement for further details.
 	(output)
 	(rect 792 1272 968 1288)
 	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
-	(text "1100" (rect 90 0 115 11)(font "Arial" ))
+	(text "_1100" (rect 90 0 121 11)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -264,7 +247,7 @@ applicable agreement for further details.
 	(output)
 	(rect 792 1352 968 1368)
 	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
-	(text "1101" (rect 90 0 114 11)(font "Arial" ))
+	(text "_1101" (rect 90 0 120 11)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -280,7 +263,7 @@ applicable agreement for further details.
 	(output)
 	(rect 792 1432 968 1448)
 	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
-	(text "1110" (rect 90 0 115 11)(font "Arial" ))
+	(text "_1110" (rect 90 0 121 11)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -296,7 +279,7 @@ applicable agreement for further details.
 	(output)
 	(rect 792 1512 968 1528)
 	(text "OUTPUT" (rect 1 0 41 10)(font "Arial" (font_size 6)))
-	(text "1111" (rect 90 0 114 11)(font "Arial" ))
+	(text "_1111" (rect 90 0 120 11)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -307,6 +290,23 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+)
+(pin
+	(output)
+	(rect 320 16 336 192)
+	(text "OUTPUT" (rect 0 135 10 175)(font "Arial" (font_size 6))(vertical))
+	(text "_1XXX" (rect 2 5 13 43)(font "Arial" )(vertical))
+	(pt 8 176)
+	(drawing
+		(line (pt 8 176)(pt 8 124))
+		(line (pt 4 124)(pt 4 98))
+		(line (pt 12 124)(pt 12 98))
+		(line (pt 12 124)(pt 4 124))
+		(line (pt 4 98)(pt 8 94))
+		(line (pt 8 94)(pt 12 98))
+		(line (pt 12 98)(pt 8 94))
+	)
+	(rotate90)
 )
 (symbol
 	(rect 360 160 496 256)
@@ -1226,15 +1226,6 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(pt 328 224)
-	(pt 328 192)
-)
-(connector
-	(text "E[0]" (rect 338 176 358 187)(font "Arial" ))
-	(pt 360 192)
-	(pt 328 192)
-)
-(connector
 	(pt 320 224)
 	(pt 328 224)
 	(bus)
@@ -1860,17 +1851,21 @@ applicable agreement for further details.
 )
 (connector
 	(text "F[3]" (rect 520 181 531 201)(font "Arial" )(vertical))
-	(pt 536 160)
 	(pt 536 192)
+	(pt 536 208)
 )
 (connector
 	(pt 536 208)
 	(pt 536 936)
 )
 (connector
-	(text "F[3]" (rect 520 181 531 201)(font "Arial" )(vertical))
-	(pt 536 192)
-	(pt 536 208)
+	(pt 360 192)
+	(pt 328 192)
+)
+(connector
+	(text "E[3]" (rect 312 197 323 217)(font "Arial" )(vertical))
+	(pt 328 224)
+	(pt 328 192)
 )
 (junction (pt 328 224))
 (junction (pt 560 296))
@@ -1943,5 +1938,6 @@ applicable agreement for further details.
 (junction (pt 608 952))
 (junction (pt 656 968))
 (junction (pt 704 984))
-(junction (pt 536 208))
 (junction (pt 536 192))
+(junction (pt 536 208))
+(junction (pt 328 192))
