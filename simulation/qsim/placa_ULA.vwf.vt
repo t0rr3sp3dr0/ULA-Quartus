@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "10/27/2016 22:49:20"
+// Generated on "10/27/2016 23:51:03"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    placa_ULA
 // 
@@ -177,6 +177,14 @@ end
 
 
 
+// expected display_dp
+always
+begin
+	display_dp_expected = 1'b0;
+	display_dp_expected = #1000 1'b1;
+	#1000;
+end 
+
 // expected display_a
 always
 begin
@@ -206,14 +214,6 @@ always
 begin
 	display_d_expected = 1'b0;
 	display_d_expected = #1000 1'b1;
-	#1000;
-end 
-
-// expected display_dp
-always
-begin
-	display_dp_expected = 1'b0;
-	display_dp_expected = #1000 1'b1;
 	#1000;
 end 
 

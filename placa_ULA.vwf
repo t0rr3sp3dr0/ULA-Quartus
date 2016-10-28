@@ -709,7 +709,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "display_a";
+	CHANNEL = "display_dp";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 14;
@@ -718,7 +718,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "display_b";
+	CHANNEL = "display_a";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 15;
@@ -727,7 +727,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "display_c";
+	CHANNEL = "display_b";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 16;
@@ -736,7 +736,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "display_d";
+	CHANNEL = "display_c";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 17;
@@ -745,7 +745,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "display_dp";
+	CHANNEL = "display_d";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 18;

@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
 
-// DATE "10/27/2016 23:08:41"
+// DATE "10/27/2016 23:55:31"
 
 // 
 // Device: Altera 5M40ZE64C4 Package EQFP64
@@ -94,8 +94,8 @@ wire \inst|inst5~0_combout ;
 wire \inst3|inst4~1_combout ;
 wire \inst3|inst4~0_combout ;
 wire \inst3|inst4~2_combout ;
-wire [3:0] \A~combout ;
 wire [3:0] \B~combout ;
+wire [3:0] \A~combout ;
 
 
 // Location: PIN_59,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default

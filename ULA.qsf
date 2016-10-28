@@ -67,8 +67,6 @@ set_global_assignment -name BDF_FILE placa_ULA.bdf
 set_global_assignment -name BDF_FILE placa_BCD.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE BCD_decoder.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE somador.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE less_than.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE equals.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE ULA.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE menor_sinal.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE somador_bit.vwf

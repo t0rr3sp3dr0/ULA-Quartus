@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for ULA
-Thu Oct 27 23:08:10 2016
+Thu Oct 27 23:55:13 2016
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -203,7 +203,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Thu Oct 27 23:08:09 2016
+    Info: Processing started: Thu Oct 27 23:55:12 2016
 Info: Command: quartus_sta ULA -c ULA
 Info: qsta_default_script.tcl version: #1
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -226,7 +226,7 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 587 megabytes
-    Info: Processing ended: Thu Oct 27 23:08:10 2016
+    Info: Processing ended: Thu Oct 27 23:55:13 2016
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

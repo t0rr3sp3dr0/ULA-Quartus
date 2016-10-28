@@ -3,7 +3,7 @@ $comment
 		vcd file ULA.msim.vcd -direction
 $end
 $date
-	Thu Oct 27 23:08:42 2016
+	Thu Oct 27 23:55:25 2016
 $end
 $version
 	ModelSim Version 10.1d
